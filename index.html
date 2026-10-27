@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#6750a4">
+<title>风之杖 · Web</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app" class="portrait">
+
+  <div id="screen-wrap"><canvas id="cv" width="640" height="480"></canvas></div>
+
+  <nav id="menubar">
+    <button class="mbtn" id="btn-menu">☰ 菜单</button>
+    <span id="fps-tag">-- FPS</span>
+    <button class="mbtn" id="btn-full">⛶</button>
+  </nav>
+
+  <!-- 虚拟手柄（IPL 布局：绝对定位，无重叠） -->
+  <div id="pad">
+    <div class="b" id="bl" data-btn="L" style="left:14px;top:6px;width:58px;height:26px;border-radius:13px">L</div>
+    <div class="b" id="bz" data-btn="Z" style="right:14px;top:6px;width:58px;height:26px;border-radius:13px;background:#7e57c2">Z</div>
+    <div class="b" id="br" data-btn="R" style="right:14px;top:38px;width:58px;height:26px;border-radius:13px">R</div>
+
+    <div class="st" id="s1" style="left:8px;bottom:14px"><div class="kn" id="k1"></div></div>
+    <div class="lbl" style="left:32px;bottom:106px">摇杆</div>
+
+    <div class="dpad">
+      <div class="dp" data-dpad="UP" style="left:48px;bottom:206px">▲</div>
+      <div class="dp" data-dpad="DOWN" style="left:48px;bottom:160px">▼</div>
+      <div class="dp" data-dpad="LEFT" style="left:22px;bottom:183px">◀</div>
+      <div class="dp" data-dpad="RIGHT" style="left:74px;bottom:183px">▶</div>
+    </div>
+    <div class="lbl" style="left:38px;bottom:136px">十字键</div>
+
+    <div class="st" id="s2" data-cstick="1" style="right:7px;top:72px;width:72px;height:72px"><div class="kn" id="k2" style="left:16px;top:16px"></div></div>
+    <div class="lbl" style="right:27px;top:148px">C 摇杆</div>
+
+    <div class="b" id="bs" data-btn="START" style="left:50%;margin-left:-19px;bottom:125px;width:38px;height:24px;border-radius:12px;font-size:9px">START</div>
+
+    <div class="b" id="bx" data-btn="X" style="right:72px;bottom:82px;width:42px;height:42px;background:#78909c;color:#fff;font-size:13px">X</div>
+    <div class="b" id="by" data-btn="Y" style="right:106px;bottom:48px;width:42px;height:42px;background:#fb8c00;color:#fff;font-size:13px">Y</div>
+    <div class="b" id="ba" data-btn="A" style="right:38px;bottom:48px;width:42px;height:42px;background:#4caf50;color:#fff;font-size:13px">A</div>
+    <div class="b" id="bb" data-btn="B" style="right:72px;bottom:14px;width:42px;height:42px;background:#e53935;color:#fff;font-size:13px">B</div>
+  </div>
+
+  <!-- 菜单面板 -->
+  <div id="menu" class="hidden">
+    <div class="card">
+      <h3>游戏</h3>
+      <div class="row">
+        <button id="m-load">载入镜像</button>
+        <input type="file" id="m-file" accept=".iso,.gcm" hidden>
+        <button id="m-reset" class="g">重置</button>
+        <button id="m-orient" class="g">横屏/竖屏</button>
+      </div>
+      <div class="row">
+        <span class="tag">存档槽</span>
+        <button class="g slot" data-slot="0">1</button>
+        <button class="g slot" data-slot="1">2</button>
+        <button class="g slot" data-slot="2">3</button>
+        <button id="gci-exp">导出 .gci</button>
+        <button id="gci-imp">导入 .gci</button>
+        <input type="file" id="gci-file" accept=".gci" hidden>
+      </div>
+      <div class="row">
+        <span class="tag">性能模式</span>
+        <input type="checkbox" id="m-perf">
+        <span class="tag">WakeLock 常亮 + DPR=1</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>金手指（游戏内嵌 Hook）</h3>
+      <div id="cheat-list"></div>
+      <div class="row">
+        <button id="cheat-add">+ 添加</button>
+        <button id="cheat-import" class="g">导入 .ini</button>
+        <input type="file" id="cheat-file" accept=".ini,.txt" hidden>
+      </div>
+      <div class="row" style="font-size:11px;color:var(--mu)">
+        预置：无限血量 · 帆船加速 · 游泳不耗精力 · 无限攻击 · 无限魔力
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>状态</h3>
+      <div id="log">就绪</div>
+    </div>
+  </div>
+
+  <div id="splash">
+    <h1>风之杖</h1>
+    <p>The Wind Waker · WebAssembly</p>
+    <button id="start-btn">开始游戏</button>
+    <div class="note">资源已内嵌 · 支持横竖屏 · 金手指内置</div>
+  </div>
+</div>
+<script src="input.js"></script>
+<script src="cheats.js"></script>
+<script src="gci.js"></script>
+<script src="gx2gl.js"></script>
+<script src="core.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
