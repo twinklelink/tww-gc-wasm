@@ -1,5 +1,5 @@
 /* GCI 存档：GameCube Memory Card 格式
-   GCI 头 0x40 字节 + 数据。风之杖 GCI: gamecode GZLE/GZLJ, 公司 01 */
+   GCI 头 0x40 字节 + 数据。风之律动 GCI: gamecode GZLE/GZLJ, 公司 01 */
 'use strict';
 const GCI={
   /* 从 WASM 卡片内存导出为 .gci 文件 */
@@ -9,7 +9,7 @@ const GCI={
     if(!card)return alert('卡片无效');
     const heap=TWW.heapU8();
     const data=heap.slice(card,card+0x8000);
-    /* 找风之杖存档（GCI 头已在卡片区开头由游戏写入）*/
+    /* 找风之律动存档（GCI 头已在卡片区开头由游戏写入）*/
     /* 实际做法：直接把卡片前 0x40 头 + 数据打包 */
     const gci=new Uint8Array(0x40+data.length);
     /* 头（Dolphin 兼容）: */
@@ -37,7 +37,7 @@ const GCI={
       if(u8.length<0x41)return alert('GCI 太小');
       /* 校验 magic 区有游戏码 */
       const gid=String.fromCharCode(u8[0],u8[1],u8[2],u8[3]);
-      if(!gid.startsWith('GZ'))console.warn('非风之杖存档? '+gid);
+      if(!gid.startsWith('GZ'))console.warn('非风之律动存档? '+gid);
       const size=(u8[8]<<24)|(u8[9]<<16)|(u8[10]<<8)|u8[11];
       const payload=u8.slice(0x40,0x40+size);
       if(!window.TWW||!TWW.exports)return alert('核心未加载');

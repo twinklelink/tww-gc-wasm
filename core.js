@@ -661,7 +661,7 @@ function allocate(slab, allocator) {
   if (allocator == ALLOC_STACK) {
     ret = stackAlloc(slab.length);
   } else {
-    ret = abort();;
+    ret = _malloc(slab.length);
   }
 
   if (!slab.subarray && !slab.slice) {
@@ -998,7 +998,7 @@ function lengthBytesUTF32(str) {
 // It is the responsibility of the caller to free() that memory.
 function allocateUTF8(str) {
   var size = lengthBytesUTF8(str) + 1;
-  var ret = abort();;
+  var ret = _malloc(size);
   if (ret) stringToUTF8Array(str, HEAP8, ret, size);
   return ret;
 }
@@ -1539,6 +1539,358 @@ var ASM_CONSTS = {
       if (Module['extraStackTrace']) js += '\n' + Module['extraStackTrace']();
       return demangleAll(js);
     }
+
+  /** @type {function(...*):?} */
+  function _C_MTXIdentity(
+  ) {
+  err('missing function: C_MTXIdentity'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _C_MTXScale(
+  ) {
+  err('missing function: C_MTXScale'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _C_MTXTrans(
+  ) {
+  err('missing function: C_MTXTrans'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _DCFlushRange(
+  ) {
+  err('missing function: DCFlushRange'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXInitTexObj(
+  ) {
+  err('missing function: GXInitTexObj'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXInitTexObjCI(
+  ) {
+  err('missing function: GXInitTexObjCI'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXInitTexObjLOD(
+  ) {
+  err('missing function: GXInitTexObjLOD'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXInitTlutObj(
+  ) {
+  err('missing function: GXInitTlutObj'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXLoadTexMtxImm(
+  ) {
+  err('missing function: GXLoadTexMtxImm'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetAlphaUpdate(
+  ) {
+  err('missing function: GXSetAlphaUpdate'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetArray(
+  ) {
+  err('missing function: GXSetArray'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetCoPlanar(
+  ) {
+  err('missing function: GXSetCoPlanar'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetColorUpdate(
+  ) {
+  err('missing function: GXSetColorUpdate'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetDither(
+  ) {
+  err('missing function: GXSetDither'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetFogRangeAdj(
+  ) {
+  err('missing function: GXSetFogRangeAdj'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetIndTexMtx(
+  ) {
+  err('missing function: GXSetIndTexMtx'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetIndTexOrder(
+  ) {
+  err('missing function: GXSetIndTexOrder'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetNumIndStages(
+  ) {
+  err('missing function: GXSetNumIndStages'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetPixelFmt(
+  ) {
+  err('missing function: GXSetPixelFmt'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetTevIndWarp(
+  ) {
+  err('missing function: GXSetTevIndWarp'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetTevKColor(
+  ) {
+  err('missing function: GXSetTevKColor'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetTevKColorSel(
+  ) {
+  err('missing function: GXSetTevKColorSel'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetTevSwapMode(
+  ) {
+  err('missing function: GXSetTevSwapMode'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetTexCoordGen2(
+  ) {
+  err('missing function: GXSetTexCoordGen2'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _GXSetZCompLoc(
+  ) {
+  err('missing function: GXSetZCompLoc'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _OSDisableInterrupts(
+  ) {
+  err('missing function: OSDisableInterrupts'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _OSGetCurrentThread(
+  ) {
+  err('missing function: OSGetCurrentThread'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _OSGetStackPointer(
+  ) {
+  err('missing function: OSGetStackPointer'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function _PPCHalt(
+  ) {
+  err('missing function: PPCHalt'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN12JUTAssertion10getSDeviceEv(
+  ) {
+  err('missing function: _ZN12JUTAssertion10getSDeviceEv'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN12JUTAssertion10showAssertEmPKciS1_(
+  ) {
+  err('missing function: _ZN12JUTAssertion10showAssertEmPKciS1_'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN12JUTAssertion19setWarningMessage_fEmPciPKcz(
+  ) {
+  err('missing function: _ZN12JUTAssertion19setWarningMessage_fEmPciPKcz'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN13mDoGph_gInf_c5allocEmi(
+  ) {
+  err('missing function: _ZN13mDoGph_gInf_c5allocEmi'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN14dRes_control_c6getResEPKclP11dRes_info_ci(
+  ) {
+  err('missing function: _ZN14dRes_control_c6getResEPKclP11dRes_info_ci'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN7JStudio14TFunctionValue18toFunction_outsideEi(
+  ) {
+  err('missing function: _ZN7JStudio14TFunctionValue18toFunction_outsideEi'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN7JStudio14TVariableValue7TOutputD2Ev(
+  ) {
+  err('missing function: _ZN7JStudio14TVariableValue7TOutputD2Ev'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN8JASystem6Kernel10TSolidHeapC1Ev(
+  ) {
+  err('missing function: _ZN8JASystem6Kernel10TSolidHeapC1Ev'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN8JASystem6Kernel5THeapC1EPNS0_9TDisposerE(
+  ) {
+  err('missing function: _ZN8JASystem6Kernel5THeapC1EPNS0_9TDisposerE'); abort(-1);
+  }
+
+  function _abort() {
+      abort('');
+    }
+
+  function _emscripten_memcpy_big(dest, src, num) {
+      HEAPU8.copyWithin(dest, src, src + num);
+    }
+
+  function _emscripten_get_heap_max() {
+      // Stay one Wasm page short of 4GB: while e.g. Chrome is able to allocate
+      // full 4GB Wasm memories, the size will wrap back to 0 bytes in Wasm side
+      // for any code that deals with heap sizes, which would require special
+      // casing all heap size related code to treat 0 specially.
+      return 2147483648;
+    }
+  
+  function emscripten_realloc_buffer(size) {
+      try {
+        // round size grow request up to wasm page size (fixed 64KB per spec)
+        wasmMemory.grow((size - buffer.byteLength + 65535) >>> 16); // .grow() takes a delta compared to the previous size
+        updateGlobalBufferAndViews(wasmMemory.buffer);
+        return 1 /*success*/;
+      } catch(e) {
+      }
+      // implicit 0 return to save code size (caller will cast "undefined" into 0
+      // anyhow)
+    }
+  function _emscripten_resize_heap(requestedSize) {
+      var oldSize = HEAPU8.length;
+      requestedSize = requestedSize >>> 0;
+      // With pthreads, races can happen (another thread might increase the size
+      // in between), so return a failure, and let the caller retry.
+  
+      // Memory resize rules:
+      // 1.  Always increase heap size to at least the requested size, rounded up
+      //     to next page multiple.
+      // 2a. If MEMORY_GROWTH_LINEAR_STEP == -1, excessively resize the heap
+      //     geometrically: increase the heap size according to
+      //     MEMORY_GROWTH_GEOMETRIC_STEP factor (default +20%), At most
+      //     overreserve by MEMORY_GROWTH_GEOMETRIC_CAP bytes (default 96MB).
+      // 2b. If MEMORY_GROWTH_LINEAR_STEP != -1, excessively resize the heap
+      //     linearly: increase the heap size by at least
+      //     MEMORY_GROWTH_LINEAR_STEP bytes.
+      // 3.  Max size for the heap is capped at 2048MB-WASM_PAGE_SIZE, or by
+      //     MAXIMUM_MEMORY, or by ASAN limit, depending on which is smallest
+      // 4.  If we were unable to allocate as much memory, it may be due to
+      //     over-eager decision to excessively reserve due to (3) above.
+      //     Hence if an allocation fails, cut down on the amount of excess
+      //     growth, in an attempt to succeed to perform a smaller allocation.
+  
+      // A limit is set for how much we can grow. We should not exceed that
+      // (the wasm binary specifies it, so if we tried, we'd fail anyhow).
+      var maxHeapSize = _emscripten_get_heap_max();
+      if (requestedSize > maxHeapSize) {
+        return false;
+      }
+  
+      let alignUp = (x, multiple) => x + (multiple - x % multiple) % multiple;
+  
+      // Loop through potential heap size increases. If we attempt a too eager
+      // reservation that fails, cut down on the attempted size and reserve a
+      // smaller bump instead. (max 3 times, chosen somewhat arbitrarily)
+      for (var cutDown = 1; cutDown <= 4; cutDown *= 2) {
+        var overGrownHeapSize = oldSize * (1 + 0.2 / cutDown); // ensure geometric growth
+        // but limit overreserving (default to capping at +96MB overgrowth at most)
+        overGrownHeapSize = Math.min(overGrownHeapSize, requestedSize + 100663296 );
+  
+        var newSize = Math.min(maxHeapSize, alignUp(Math.max(requestedSize, overGrownHeapSize), 65536));
+  
+        var replacement = emscripten_realloc_buffer(newSize);
+        if (replacement) {
+  
+          return true;
+        }
+      }
+      return false;
+    }
+
+  function flush_NO_FILESYSTEM() {
+      // flush anything remaining in the buffers during shutdown
+      var buffers = SYSCALLS.buffers;
+      if (buffers[1].length) SYSCALLS.printChar(1, 10);
+      if (buffers[2].length) SYSCALLS.printChar(2, 10);
+    }
+  
+  var SYSCALLS = {buffers:[null,[],[]],printChar:function(stream, curr) {
+        var buffer = SYSCALLS.buffers[stream];
+        if (curr === 0 || curr === 10) {
+          (stream === 1 ? out : err)(UTF8ArrayToString(buffer, 0));
+          buffer.length = 0;
+        } else {
+          buffer.push(curr);
+        }
+      },varargs:undefined,get:function() {
+        SYSCALLS.varargs += 4;
+        var ret = HEAP32[(((SYSCALLS.varargs)-(4))>>2)];
+        return ret;
+      },getStr:function(ptr) {
+        var ret = UTF8ToString(ptr);
+        return ret;
+      },get64:function(low, high) {
+        return low;
+      }};
+  function _fd_write(fd, iov, iovcnt, pnum) {
+      ;
+      // hack to support printf in SYSCALLS_REQUIRE_FILESYSTEM=0
+      var num = 0;
+      for (var i = 0; i < iovcnt; i++) {
+        var ptr = HEAP32[((iov)>>2)];
+        var len = HEAP32[(((iov)+(4))>>2)];
+        iov += 8;
+        for (var j = 0; j < len; j++) {
+          SYSCALLS.printChar(fd, HEAPU8[ptr+j]);
+        }
+        num += len;
+      }
+      HEAP32[((pnum)>>2)] = num;
+      return 0;
+    }
+
+  function _setTempRet0(val) {
+      setTempRet0(val);
+    }
 var ASSERTIONS = false;
 
 
@@ -1569,7 +1921,49 @@ function intArrayToString(array) {
 
 
 var asmLibraryArg = {
-  
+  "C_MTXIdentity": _C_MTXIdentity,
+  "C_MTXScale": _C_MTXScale,
+  "C_MTXTrans": _C_MTXTrans,
+  "DCFlushRange": _DCFlushRange,
+  "GXInitTexObj": _GXInitTexObj,
+  "GXInitTexObjCI": _GXInitTexObjCI,
+  "GXInitTexObjLOD": _GXInitTexObjLOD,
+  "GXInitTlutObj": _GXInitTlutObj,
+  "GXLoadTexMtxImm": _GXLoadTexMtxImm,
+  "GXSetAlphaUpdate": _GXSetAlphaUpdate,
+  "GXSetArray": _GXSetArray,
+  "GXSetCoPlanar": _GXSetCoPlanar,
+  "GXSetColorUpdate": _GXSetColorUpdate,
+  "GXSetDither": _GXSetDither,
+  "GXSetFogRangeAdj": _GXSetFogRangeAdj,
+  "GXSetIndTexMtx": _GXSetIndTexMtx,
+  "GXSetIndTexOrder": _GXSetIndTexOrder,
+  "GXSetNumIndStages": _GXSetNumIndStages,
+  "GXSetPixelFmt": _GXSetPixelFmt,
+  "GXSetTevIndWarp": _GXSetTevIndWarp,
+  "GXSetTevKColor": _GXSetTevKColor,
+  "GXSetTevKColorSel": _GXSetTevKColorSel,
+  "GXSetTevSwapMode": _GXSetTevSwapMode,
+  "GXSetTexCoordGen2": _GXSetTexCoordGen2,
+  "GXSetZCompLoc": _GXSetZCompLoc,
+  "OSDisableInterrupts": _OSDisableInterrupts,
+  "OSGetCurrentThread": _OSGetCurrentThread,
+  "OSGetStackPointer": _OSGetStackPointer,
+  "PPCHalt": _PPCHalt,
+  "_ZN12JUTAssertion10getSDeviceEv": __ZN12JUTAssertion10getSDeviceEv,
+  "_ZN12JUTAssertion10showAssertEmPKciS1_": __ZN12JUTAssertion10showAssertEmPKciS1_,
+  "_ZN12JUTAssertion19setWarningMessage_fEmPciPKcz": __ZN12JUTAssertion19setWarningMessage_fEmPciPKcz,
+  "_ZN13mDoGph_gInf_c5allocEmi": __ZN13mDoGph_gInf_c5allocEmi,
+  "_ZN14dRes_control_c6getResEPKclP11dRes_info_ci": __ZN14dRes_control_c6getResEPKclP11dRes_info_ci,
+  "_ZN7JStudio14TFunctionValue18toFunction_outsideEi": __ZN7JStudio14TFunctionValue18toFunction_outsideEi,
+  "_ZN7JStudio14TVariableValue7TOutputD2Ev": __ZN7JStudio14TVariableValue7TOutputD2Ev,
+  "_ZN8JASystem6Kernel10TSolidHeapC1Ev": __ZN8JASystem6Kernel10TSolidHeapC1Ev,
+  "_ZN8JASystem6Kernel5THeapC1EPNS0_9TDisposerE": __ZN8JASystem6Kernel5THeapC1EPNS0_9TDisposerE,
+  "abort": _abort,
+  "emscripten_memcpy_big": _emscripten_memcpy_big,
+  "emscripten_resize_heap": _emscripten_resize_heap,
+  "fd_write": _fd_write,
+  "setTempRet0": _setTempRet0
 };
 var asm = createWasm();
 /** @type {function(...*):?} */
@@ -1578,8 +1972,213 @@ var ___wasm_call_ctors = Module["___wasm_call_ctors"] = function() {
 };
 
 /** @type {function(...*):?} */
+var _tww_init = Module["_tww_init"] = function() {
+  return (_tww_init = Module["_tww_init"] = Module["asm"]["tww_init"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _malloc = Module["_malloc"] = function() {
+  return (_malloc = Module["_malloc"] = Module["asm"]["malloc"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_memory = Module["_tww_memory"] = function() {
+  return (_tww_memory = Module["_tww_memory"] = Module["asm"]["tww_memory"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_mem_size = Module["_tww_mem_size"] = function() {
+  return (_tww_mem_size = Module["_tww_mem_size"] = Module["asm"]["tww_mem_size"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_input = Module["_tww_input"] = function() {
+  return (_tww_input = Module["_tww_input"] = Module["asm"]["tww_input"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_frame = Module["_tww_frame"] = function() {
+  return (_tww_frame = Module["_tww_frame"] = Module["asm"]["tww_frame"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_step = Module["_tww_step"] = function() {
+  return (_tww_step = Module["_tww_step"] = Module["asm"]["tww_step"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_frame_scale = Module["_tww_frame_scale"] = function() {
+  return (_tww_frame_scale = Module["_tww_frame_scale"] = Module["asm"]["tww_frame_scale"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_set_frame_rate = Module["_tww_set_frame_rate"] = function() {
+  return (_tww_set_frame_rate = Module["_tww_set_frame_rate"] = Module["asm"]["tww_set_frame_rate"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_present = Module["_tww_present"] = function() {
+  return (_tww_present = Module["_tww_present"] = Module["asm"]["tww_present"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_set_res = Module["_tww_set_res"] = function() {
+  return (_tww_set_res = Module["_tww_set_res"] = Module["asm"]["tww_set_res"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_set_output_size = Module["_gx2gl_set_output_size"] = function() {
+  return (_gx2gl_set_output_size = Module["_gx2gl_set_output_size"] = Module["asm"]["gx2gl_set_output_size"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_set_aspect_mode = Module["_gx2gl_set_aspect_mode"] = function() {
+  return (_gx2gl_set_aspect_mode = Module["_gx2gl_set_aspect_mode"] = Module["asm"]["gx2gl_set_aspect_mode"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_get_aspect = Module["_tww_get_aspect"] = function() {
+  return (_tww_get_aspect = Module["_tww_get_aspect"] = Module["asm"]["tww_get_aspect"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_get_res_w = Module["_tww_get_res_w"] = function() {
+  return (_tww_get_res_w = Module["_tww_get_res_w"] = Module["asm"]["tww_get_res_w"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_get_res_h = Module["_tww_get_res_h"] = function() {
+  return (_tww_get_res_h = Module["_tww_get_res_h"] = Module["asm"]["tww_get_res_h"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_get_frame = Module["_tww_get_frame"] = function() {
+  return (_tww_get_frame = Module["_tww_get_frame"] = Module["asm"]["tww_get_frame"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_skip = Module["_tww_skip"] = function() {
+  return (_tww_skip = Module["_tww_skip"] = Module["asm"]["tww_skip"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_poke32 = Module["_tww_poke32"] = function() {
+  return (_tww_poke32 = Module["_tww_poke32"] = Module["asm"]["tww_poke32"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_peek32 = Module["_tww_peek32"] = function() {
+  return (_tww_peek32 = Module["_tww_peek32"] = Module["asm"]["tww_peek32"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_poke8 = Module["_tww_poke8"] = function() {
+  return (_tww_poke8 = Module["_tww_poke8"] = Module["asm"]["tww_poke8"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_peek8 = Module["_tww_peek8"] = function() {
+  return (_tww_peek8 = Module["_tww_peek8"] = Module["asm"]["tww_peek8"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_card_write = Module["_tww_card_write"] = function() {
+  return (_tww_card_write = Module["_tww_card_write"] = Module["asm"]["tww_card_write"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_card_read = Module["_tww_card_read"] = function() {
+  return (_tww_card_read = Module["_tww_card_read"] = Module["asm"]["tww_card_read"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_card_ptr = Module["_tww_card_ptr"] = function() {
+  return (_tww_card_ptr = Module["_tww_card_ptr"] = Module["asm"]["tww_card_ptr"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _iso_load = Module["_iso_load"] = function() {
+  return (_iso_load = Module["_iso_load"] = Module["asm"]["iso_load"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _iso_mount = Module["_iso_mount"] = function() {
+  return (_iso_mount = Module["_iso_mount"] = Module["asm"]["iso_mount"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _iso_ptr = Module["_iso_ptr"] = function() {
+  return (_iso_ptr = Module["_iso_ptr"] = Module["asm"]["iso_ptr"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _iso_count = Module["_iso_count"] = function() {
+  return (_iso_count = Module["_iso_count"] = Module["asm"]["iso_count"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_set_efb_size = Module["_gx2gl_set_efb_size"] = function() {
+  return (_gx2gl_set_efb_size = Module["_gx2gl_set_efb_size"] = Module["asm"]["gx2gl_set_efb_size"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_out_w = Module["_gx2gl_out_w"] = function() {
+  return (_gx2gl_out_w = Module["_gx2gl_out_w"] = Module["asm"]["gx2gl_out_w"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_out_h = Module["_gx2gl_out_h"] = function() {
+  return (_gx2gl_out_h = Module["_gx2gl_out_h"] = Module["asm"]["gx2gl_out_h"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_efb_w = Module["_gx2gl_efb_w"] = function() {
+  return (_gx2gl_efb_w = Module["_gx2gl_efb_w"] = Module["asm"]["gx2gl_efb_w"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_efb_h = Module["_gx2gl_efb_h"] = function() {
+  return (_gx2gl_efb_h = Module["_gx2gl_efb_h"] = Module["asm"]["gx2gl_efb_h"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_aspect_scale = Module["_gx2gl_aspect_scale"] = function() {
+  return (_gx2gl_aspect_scale = Module["_gx2gl_aspect_scale"] = Module["asm"]["gx2gl_aspect_scale"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_vp_scale_x = Module["_gx2gl_vp_scale_x"] = function() {
+  return (_gx2gl_vp_scale_x = Module["_gx2gl_vp_scale_x"] = Module["asm"]["gx2gl_vp_scale_x"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_vp_scale_y = Module["_gx2gl_vp_scale_y"] = function() {
+  return (_gx2gl_vp_scale_y = Module["_gx2gl_vp_scale_y"] = Module["asm"]["gx2gl_vp_scale_y"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_stream_len = Module["_gx2gl_stream_len"] = function() {
+  return (_gx2gl_stream_len = Module["_gx2gl_stream_len"] = Module["asm"]["gx2gl_stream_len"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_stream_data = Module["_gx2gl_stream_data"] = function() {
+  return (_gx2gl_stream_data = Module["_gx2gl_stream_data"] = Module["asm"]["gx2gl_stream_data"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _gx2gl_stream_reset = Module["_gx2gl_stream_reset"] = function() {
+  return (_gx2gl_stream_reset = Module["_gx2gl_stream_reset"] = Module["asm"]["gx2gl_stream_reset"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
 var ___errno_location = Module["___errno_location"] = function() {
   return (___errno_location = Module["___errno_location"] = Module["asm"]["__errno_location"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _free = Module["_free"] = function() {
+  return (_free = Module["_free"] = Module["asm"]["free"]).apply(null, arguments);
 };
 
 /** @type {function(...*):?} */
@@ -1595,6 +2194,11 @@ var stackRestore = Module["stackRestore"] = function() {
 /** @type {function(...*):?} */
 var stackAlloc = Module["stackAlloc"] = function() {
   return (stackAlloc = Module["stackAlloc"] = Module["asm"]["stackAlloc"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var dynCall_jiji = Module["dynCall_jiji"] = function() {
+  return (dynCall_jiji = Module["dynCall_jiji"] = Module["asm"]["dynCall_jiji"]).apply(null, arguments);
 };
 
 
