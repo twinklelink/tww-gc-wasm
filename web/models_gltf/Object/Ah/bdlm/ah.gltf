@@ -1,0 +1,255 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "ah",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "ah",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 15,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 17,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 16,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 16,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 12,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "SC_eye",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 11
+}
+}
+},
+{
+"name": "SC_kuchi",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 10
+}
+}
+},
+{
+"name": "TelescopeA",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 9
+}
+}
+},
+{
+"name": "kami",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 7
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+}
+],
+"images": [
+{
+"uri": "ah_tex0.png"
+},
+{
+"uri": "ah_tex1.png"
+},
+{
+"uri": "ah_tex2.png"
+},
+{
+"uri": "ah_tex3.png"
+},
+{
+"uri": "ah_tex4.png"
+},
+{
+"uri": "ah_tex5.png"
+},
+{
+"uri": "ah_tex6.png"
+},
+{
+"uri": "ah_tex7.png"
+},
+{
+"uri": "ah_tex8.png"
+},
+{
+"uri": "ah_tex9.png"
+},
+{
+"uri": "ah_tex10.png"
+},
+{
+"uri": "ah_tex11.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 16,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 16,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 16,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 15,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 204
+},
+{
+"buffer": 0,
+"byteOffset": 204,
+"byteLength": 132
+},
+{
+"buffer": 0,
+"byteOffset": 336,
+"byteLength": 192
+},
+{
+"buffer": 0,
+"byteOffset": 528,
+"byteLength": 192
+},
+{
+"buffer": 0,
+"byteOffset": 720,
+"byteLength": 30
+}
+],
+"buffers": [
+{
+"byteLength": 750
+}
+]
+}

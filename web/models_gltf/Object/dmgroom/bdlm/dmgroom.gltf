@@ -1,0 +1,153 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "dmgroom",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "dmgroom",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 4395,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 4795,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 4795,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 4794,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 3595,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "lambert70_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+}
+],
+"images": [
+{
+"uri": "dmgroom_tex0.png"
+},
+{
+"uri": "dmgroom_tex1.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 4794,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 4794,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 4794,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 4395,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 57540
+},
+{
+"buffer": 0,
+"byteOffset": 57540,
+"byteLength": 38360
+},
+{
+"buffer": 0,
+"byteOffset": 95900,
+"byteLength": 57532
+},
+{
+"buffer": 0,
+"byteOffset": 153432,
+"byteLength": 57528
+},
+{
+"buffer": 0,
+"byteOffset": 210960,
+"byteLength": 8790
+}
+],
+"buffers": [
+{
+"byteLength": 219750
+}
+]
+}

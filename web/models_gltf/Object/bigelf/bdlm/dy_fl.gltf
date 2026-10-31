@@ -1,0 +1,165 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "dy_fl",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "dy_fl",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 552,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 602,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 602,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 602,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 451,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "dy_m1",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 1
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+}
+],
+"images": [
+{
+"uri": "dy_fl_tex0.png"
+},
+{
+"uri": "dy_fl_tex1.png"
+},
+{
+"uri": "dy_fl_tex2.png"
+},
+{
+"uri": "dy_fl_tex3.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 602,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 602,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 602,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 552,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 7232
+},
+{
+"buffer": 0,
+"byteOffset": 7232,
+"byteLength": 4816
+},
+{
+"buffer": 0,
+"byteOffset": 12048,
+"byteLength": 7224
+},
+{
+"buffer": 0,
+"byteOffset": 19272,
+"byteLength": 7224
+},
+{
+"buffer": 0,
+"byteOffset": 26496,
+"byteLength": 1104
+}
+],
+"buffers": [
+{
+"byteLength": 27600
+}
+]
+}

@@ -1,0 +1,153 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "vhyoi",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "vhyoi",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 2142,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 2337,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 2337,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 2337,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 1752,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "hyoi",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+}
+],
+"images": [
+{
+"uri": "vhyoi_tex0.png"
+},
+{
+"uri": "vhyoi_tex1.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 2336,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 2336,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 2336,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 2142,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 28044
+},
+{
+"buffer": 0,
+"byteOffset": 28044,
+"byteLength": 18696
+},
+{
+"buffer": 0,
+"byteOffset": 46740,
+"byteLength": 28044
+},
+{
+"buffer": 0,
+"byteOffset": 74784,
+"byteLength": 28032
+},
+{
+"buffer": 0,
+"byteOffset": 102816,
+"byteLength": 4284
+}
+],
+"buffers": [
+{
+"byteLength": 107100
+}
+]
+}

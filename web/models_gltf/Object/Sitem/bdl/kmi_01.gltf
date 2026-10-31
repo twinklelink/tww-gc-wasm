@@ -1,0 +1,153 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "kmi_01",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "kmi_01",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 426,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 465,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 465,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 465,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 348,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "lambert3",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+}
+],
+"images": [
+{
+"uri": "kmi_01_tex0.png"
+},
+{
+"uri": "kmi_01_tex1.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 464,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 464,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 464,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 426,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 5580
+},
+{
+"buffer": 0,
+"byteOffset": 5580,
+"byteLength": 3720
+},
+{
+"buffer": 0,
+"byteOffset": 9300,
+"byteLength": 5580
+},
+{
+"buffer": 0,
+"byteOffset": 14880,
+"byteLength": 5568
+},
+{
+"buffer": 0,
+"byteOffset": 20448,
+"byteLength": 852
+}
+],
+"buffers": [
+{
+"byteLength": 21300
+}
+]
+}

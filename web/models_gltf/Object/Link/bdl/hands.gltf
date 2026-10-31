@@ -1,0 +1,288 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "hands",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "hands",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 1494,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 1630,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 1630,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 1630,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 1222,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "LhandB",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 2
+}
+}
+},
+{
+"name": "LhandF",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 2
+}
+}
+},
+{
+"name": "LhandB(2)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 4
+}
+}
+},
+{
+"name": "LhandB(3)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 4
+}
+}
+},
+{
+"name": "LhandB(4)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "LhandF(2)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 2
+}
+}
+},
+{
+"name": "LhandB(5)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "LhandB(6)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 2
+}
+}
+},
+{
+"name": "LhandB(7)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 2
+}
+}
+},
+{
+"name": "LhandF(3)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+}
+],
+"images": [
+{
+"uri": "hands_tex0.png"
+},
+{
+"uri": "hands_tex1.png"
+},
+{
+"uri": "hands_tex2.png"
+},
+{
+"uri": "hands_tex3.png"
+},
+{
+"uri": "hands_tex4.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 1629,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 1629,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 1629,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 1494,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 19560
+},
+{
+"buffer": 0,
+"byteOffset": 19560,
+"byteLength": 13040
+},
+{
+"buffer": 0,
+"byteOffset": 32600,
+"byteLength": 19560
+},
+{
+"buffer": 0,
+"byteOffset": 52160,
+"byteLength": 19552
+},
+{
+"buffer": 0,
+"byteOffset": 71712,
+"byteLength": 2988
+}
+],
+"buffers": [
+{
+"byteLength": 74700
+}
+]
+}

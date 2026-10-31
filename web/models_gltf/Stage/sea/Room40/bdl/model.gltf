@@ -1,0 +1,287 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "model",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "model",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 1629,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 1777,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 1777,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 1777,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 1332,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "Q_dg_anakuroi_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 6
+}
+}
+},
+{
+"name": "Y_keyitem_boots_dragon3_lambert109_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+},
+{
+"name": "Y_keyitem_boots_dragon3_lambert110_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 2
+}
+}
+},
+{
+"name": "Y_keyitem_boots_dragon3_sonotahasi1_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 5
+}
+}
+},
+{
+"name": "kage_sita_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 4
+}
+}
+},
+{
+"name": "kori_obj_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 7
+}
+}
+},
+{
+"name": "tang_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 3
+}
+}
+},
+{
+"name": "Y_keyitem_boots_dragon3_lambert110_v(2)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+}
+],
+"images": [
+{
+"uri": "model_tex0.png"
+},
+{
+"uri": "model_tex1.png"
+},
+{
+"uri": "model_tex2.png"
+},
+{
+"uri": "model_tex3.png"
+},
+{
+"uri": "model_tex4.png"
+},
+{
+"uri": "model_tex5.png"
+},
+{
+"uri": "model_tex6.png"
+},
+{
+"uri": "model_tex7.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 1777,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 1777,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 1777,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 1629,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 21328
+},
+{
+"buffer": 0,
+"byteOffset": 21328,
+"byteLength": 14216
+},
+{
+"buffer": 0,
+"byteOffset": 35544,
+"byteLength": 21324
+},
+{
+"buffer": 0,
+"byteOffset": 56868,
+"byteLength": 21324
+},
+{
+"buffer": 0,
+"byteOffset": 78192,
+"byteLength": 3258
+}
+],
+"buffers": [
+{
+"byteLength": 81450
+}
+]
+}

@@ -1,0 +1,165 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "bwd_shippoa",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "bwd_shippoa",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 816,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 890,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 890,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 890,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 667,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "model4_body",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+}
+],
+"images": [
+{
+"uri": "bwd_shippoa_tex0.png"
+},
+{
+"uri": "bwd_shippoa_tex1.png"
+},
+{
+"uri": "bwd_shippoa_tex2.png"
+},
+{
+"uri": "bwd_shippoa_tex3.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 890,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 890,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 890,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 816,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 10688
+},
+{
+"buffer": 0,
+"byteOffset": 10688,
+"byteLength": 7120
+},
+{
+"buffer": 0,
+"byteOffset": 17808,
+"byteLength": 10680
+},
+{
+"buffer": 0,
+"byteOffset": 28488,
+"byteLength": 10680
+},
+{
+"buffer": 0,
+"byteOffset": 39168,
+"byteLength": 1632
+}
+],
+"buffers": [
+{
+"byteLength": 40800
+}
+]
+}

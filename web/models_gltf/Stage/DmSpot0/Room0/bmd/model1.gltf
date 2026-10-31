@@ -1,0 +1,344 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "model1",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "model1",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 15,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 17,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 16,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 16,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 12,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "SC_01_mizu",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "SC_01_mizu_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+},
+{
+"name": "SC_01_mizu_v_x",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 9
+}
+}
+},
+{
+"name": "SC_01_mizu_v(2)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 2
+}
+}
+},
+{
+"name": "SC_01_mizu_v(3)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 4
+}
+}
+},
+{
+"name": "SC_01_mizu_v(4)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 12
+}
+}
+},
+{
+"name": "SC_01_mizu_v(5)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 14
+}
+}
+},
+{
+"name": "SC_01_mizu_v(6)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 17
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+},
+{
+"source": 13
+},
+{
+"source": 14
+},
+{
+"source": 15
+},
+{
+"source": 16
+},
+{
+"source": 17
+}
+],
+"images": [
+{
+"uri": "model1_tex0.png"
+},
+{
+"uri": "model1_tex1.png"
+},
+{
+"uri": "model1_tex2.png"
+},
+{
+"uri": "model1_tex3.png"
+},
+{
+"uri": "model1_tex4.png"
+},
+{
+"uri": "model1_tex5.png"
+},
+{
+"uri": "model1_tex6.png"
+},
+{
+"uri": "model1_tex7.png"
+},
+{
+"uri": "model1_tex8.png"
+},
+{
+"uri": "model1_tex9.png"
+},
+{
+"uri": "model1_tex10.png"
+},
+{
+"uri": "model1_tex11.png"
+},
+{
+"uri": "model1_tex12.png"
+},
+{
+"uri": "model1_tex13.png"
+},
+{
+"uri": "model1_tex14.png"
+},
+{
+"uri": "model1_tex15.png"
+},
+{
+"uri": "model1_tex16.png"
+},
+{
+"uri": "model1_tex17.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 16,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 16,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 16,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 15,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 204
+},
+{
+"buffer": 0,
+"byteOffset": 204,
+"byteLength": 132
+},
+{
+"buffer": 0,
+"byteOffset": 336,
+"byteLength": 192
+},
+{
+"buffer": 0,
+"byteOffset": 528,
+"byteLength": 192
+},
+{
+"buffer": 0,
+"byteOffset": 720,
+"byteLength": 30
+}
+],
+"buffers": [
+{
+"byteLength": 750
+}
+]
+}

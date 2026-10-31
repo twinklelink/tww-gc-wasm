@@ -1,0 +1,225 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "qkzyg",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "qkzyg",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 132,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 144,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 144,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 144,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 108,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "Qkzyg_yougn_only_Qmoya_v_x",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 1
+}
+}
+},
+{
+"name": "Qkzyg_yougn_only_a_yougan_v_x",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 5
+}
+}
+},
+{
+"name": "Qkzyg_yougn_only_b_yougan_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 4
+}
+}
+},
+{
+"name": "SC_00_umi",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+}
+],
+"images": [
+{
+"uri": "qkzyg_tex0.png"
+},
+{
+"uri": "qkzyg_tex1.png"
+},
+{
+"uri": "qkzyg_tex2.png"
+},
+{
+"uri": "qkzyg_tex3.png"
+},
+{
+"uri": "qkzyg_tex4.png"
+},
+{
+"uri": "qkzyg_tex5.png"
+},
+{
+"uri": "qkzyg_tex6.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 144,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 144,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 144,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 132,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 1728
+},
+{
+"buffer": 0,
+"byteOffset": 1728,
+"byteLength": 1152
+},
+{
+"buffer": 0,
+"byteOffset": 2880,
+"byteLength": 1728
+},
+{
+"buffer": 0,
+"byteOffset": 4608,
+"byteLength": 1728
+},
+{
+"buffer": 0,
+"byteOffset": 6336,
+"byteLength": 264
+}
+],
+"buffers": [
+{
+"byteLength": 6600
+}
+]
+}

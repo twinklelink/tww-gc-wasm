@@ -1,0 +1,626 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "model",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "model",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 183,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 200,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 200,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 199,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 149,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "E3mBLACK_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "GanonRyuYubi1_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "M_ganon_test1_M_ganon_head01_s1_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "M_ganon_test1_M_ganon_head01_t_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "M_ganon_test1_h_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "M_ganon_test1_k1_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "MorimoY_GanonGate_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "SC_Yedge_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "TMP_FloorD_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "YM_GanonRyuGate_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "lambert47_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "lambert49_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "lambert56_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "lambert58_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "lambert67_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "lambert68_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "lambert69_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "lambert70_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "lambert71_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 31
+}
+}
+},
+{
+"name": "lambert73_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 30
+}
+}
+},
+{
+"name": "lambert74_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 29
+}
+}
+},
+{
+"name": "mtl00_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 28
+}
+}
+},
+{
+"name": "test1_test_lambert10307_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 27
+}
+}
+},
+{
+"name": "test1_test_test_test_lambert10289_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 26
+}
+}
+},
+{
+"name": "test_lambert10288_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 25
+}
+}
+},
+{
+"name": "lambert49_v(2)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+},
+{
+"source": 13
+},
+{
+"source": 14
+},
+{
+"source": 15
+},
+{
+"source": 16
+},
+{
+"source": 17
+},
+{
+"source": 18
+},
+{
+"source": 19
+},
+{
+"source": 20
+},
+{
+"source": 21
+},
+{
+"source": 22
+},
+{
+"source": 23
+},
+{
+"source": 24
+},
+{
+"source": 25
+},
+{
+"source": 26
+},
+{
+"source": 27
+},
+{
+"source": 28
+},
+{
+"source": 29
+},
+{
+"source": 30
+},
+{
+"source": 31
+}
+],
+"images": [
+{
+"uri": "model_tex0.png"
+},
+{
+"uri": "model_tex1.png"
+},
+{
+"uri": "model_tex2.png"
+},
+{
+"uri": "model_tex3.png"
+},
+{
+"uri": "model_tex4.png"
+},
+{
+"uri": "model_tex5.png"
+},
+{
+"uri": "model_tex6.png"
+},
+{
+"uri": "model_tex7.png"
+},
+{
+"uri": "model_tex8.png"
+},
+{
+"uri": "model_tex9.png"
+},
+{
+"uri": "model_tex10.png"
+},
+{
+"uri": "model_tex11.png"
+},
+{
+"uri": "model_tex12.png"
+},
+{
+"uri": "model_tex13.png"
+},
+{
+"uri": "model_tex14.png"
+},
+{
+"uri": "model_tex15.png"
+},
+{
+"uri": "model_tex16.png"
+},
+{
+"uri": "model_tex17.png"
+},
+{
+"uri": "model_tex18.png"
+},
+{
+"uri": "model_tex19.png"
+},
+{
+"uri": "model_tex20.png"
+},
+{
+"uri": "model_tex21.png"
+},
+{
+"uri": "model_tex22.png"
+},
+{
+"uri": "model_tex23.png"
+},
+{
+"uri": "model_tex24.png"
+},
+{
+"uri": "model_tex25.png"
+},
+{
+"uri": "model_tex26.png"
+},
+{
+"uri": "model_tex27.png"
+},
+{
+"uri": "model_tex28.png"
+},
+{
+"uri": "model_tex29.png"
+},
+{
+"uri": "model_tex30.png"
+},
+{
+"uri": "model_tex31.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 199,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 199,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 199,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 183,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 2400
+},
+{
+"buffer": 0,
+"byteOffset": 2400,
+"byteLength": 1600
+},
+{
+"buffer": 0,
+"byteOffset": 4000,
+"byteLength": 2396
+},
+{
+"buffer": 0,
+"byteOffset": 6396,
+"byteLength": 2388
+},
+{
+"buffer": 0,
+"byteOffset": 8784,
+"byteLength": 366
+}
+],
+"buffers": [
+{
+"byteLength": 9150
+}
+]
+}

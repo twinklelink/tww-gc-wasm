@@ -1,0 +1,331 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "zs",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "zs",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 480,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 524,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 524,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 523,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 392,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "SC_eye",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 15
+}
+}
+},
+{
+"name": "SC_kuchi",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 14
+}
+}
+},
+{
+"name": "mayu",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 17
+}
+}
+},
+{
+"name": "mokubu1",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 16
+}
+}
+},
+{
+"name": "mune",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 12
+}
+}
+},
+{
+"name": "udewa",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 8
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+},
+{
+"source": 13
+},
+{
+"source": 14
+},
+{
+"source": 15
+},
+{
+"source": 16
+},
+{
+"source": 17
+},
+{
+"source": 18
+},
+{
+"source": 19
+}
+],
+"images": [
+{
+"uri": "zs_tex0.png"
+},
+{
+"uri": "zs_tex1.png"
+},
+{
+"uri": "zs_tex2.png"
+},
+{
+"uri": "zs_tex3.png"
+},
+{
+"uri": "zs_tex4.png"
+},
+{
+"uri": "zs_tex5.png"
+},
+{
+"uri": "zs_tex6.png"
+},
+{
+"uri": "zs_tex7.png"
+},
+{
+"uri": "zs_tex8.png"
+},
+{
+"uri": "zs_tex9.png"
+},
+{
+"uri": "zs_tex10.png"
+},
+{
+"uri": "zs_tex11.png"
+},
+{
+"uri": "zs_tex12.png"
+},
+{
+"uri": "zs_tex13.png"
+},
+{
+"uri": "zs_tex14.png"
+},
+{
+"uri": "zs_tex15.png"
+},
+{
+"uri": "zs_tex16.png"
+},
+{
+"uri": "zs_tex17.png"
+},
+{
+"uri": "zs_tex18.png"
+},
+{
+"uri": "zs_tex19.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 523,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 523,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 523,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 480,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 6288
+},
+{
+"buffer": 0,
+"byteOffset": 6288,
+"byteLength": 4192
+},
+{
+"buffer": 0,
+"byteOffset": 10480,
+"byteLength": 6284
+},
+{
+"buffer": 0,
+"byteOffset": 16764,
+"byteLength": 6276
+},
+{
+"buffer": 0,
+"byteOffset": 23040,
+"byteLength": 960
+}
+],
+"buffers": [
+{
+"byteLength": 24000
+}
+]
+}

@@ -1,0 +1,383 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "fd_comp",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "fd_comp",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 441,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 481,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 481,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 481,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 360,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "cb_cello_vi",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 22
+}
+}
+},
+{
+"name": "m_fd_blowR",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 20
+}
+}
+},
+{
+"name": "m_fd_body",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 21
+}
+}
+},
+{
+"name": "m_fd_browL",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 20
+}
+}
+},
+{
+"name": "m_fd_eyeL",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 19
+}
+}
+},
+{
+"name": "m_fd_eyeR",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 19
+}
+}
+},
+{
+"name": "m_fd_mouth",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 17
+}
+}
+},
+{
+"name": "m_fd_stick",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 23
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+},
+{
+"source": 13
+},
+{
+"source": 14
+},
+{
+"source": 15
+},
+{
+"source": 16
+},
+{
+"source": 17
+},
+{
+"source": 18
+},
+{
+"source": 19
+},
+{
+"source": 20
+},
+{
+"source": 21
+},
+{
+"source": 22
+},
+{
+"source": 23
+}
+],
+"images": [
+{
+"uri": "fd_comp_tex0.png"
+},
+{
+"uri": "fd_comp_tex1.png"
+},
+{
+"uri": "fd_comp_tex2.png"
+},
+{
+"uri": "fd_comp_tex3.png"
+},
+{
+"uri": "fd_comp_tex4.png"
+},
+{
+"uri": "fd_comp_tex5.png"
+},
+{
+"uri": "fd_comp_tex6.png"
+},
+{
+"uri": "fd_comp_tex7.png"
+},
+{
+"uri": "fd_comp_tex8.png"
+},
+{
+"uri": "fd_comp_tex9.png"
+},
+{
+"uri": "fd_comp_tex10.png"
+},
+{
+"uri": "fd_comp_tex11.png"
+},
+{
+"uri": "fd_comp_tex12.png"
+},
+{
+"uri": "fd_comp_tex13.png"
+},
+{
+"uri": "fd_comp_tex14.png"
+},
+{
+"uri": "fd_comp_tex15.png"
+},
+{
+"uri": "fd_comp_tex16.png"
+},
+{
+"uri": "fd_comp_tex17.png"
+},
+{
+"uri": "fd_comp_tex18.png"
+},
+{
+"uri": "fd_comp_tex19.png"
+},
+{
+"uri": "fd_comp_tex20.png"
+},
+{
+"uri": "fd_comp_tex21.png"
+},
+{
+"uri": "fd_comp_tex22.png"
+},
+{
+"uri": "fd_comp_tex23.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 481,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 481,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 481,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 441,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 5776
+},
+{
+"buffer": 0,
+"byteOffset": 5776,
+"byteLength": 3848
+},
+{
+"buffer": 0,
+"byteOffset": 9624,
+"byteLength": 5772
+},
+{
+"buffer": 0,
+"byteOffset": 15396,
+"byteLength": 5772
+},
+{
+"buffer": 0,
+"byteOffset": 21168,
+"byteLength": 882
+}
+],
+"buffers": [
+{
+"byteLength": 22050
+}
+]
+}

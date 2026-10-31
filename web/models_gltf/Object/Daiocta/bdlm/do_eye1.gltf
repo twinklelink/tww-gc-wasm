@@ -1,0 +1,185 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "do_eye1",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "do_eye1",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 360,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 393,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 393,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 393,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 294,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "m_do_eye1",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 3
+}
+}
+},
+{
+"name": "m_do_eye2",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+}
+],
+"images": [
+{
+"uri": "do_eye1_tex0.png"
+},
+{
+"uri": "do_eye1_tex1.png"
+},
+{
+"uri": "do_eye1_tex2.png"
+},
+{
+"uri": "do_eye1_tex3.png"
+},
+{
+"uri": "do_eye1_tex4.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 392,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 392,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 392,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 360,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 4716
+},
+{
+"buffer": 0,
+"byteOffset": 4716,
+"byteLength": 3144
+},
+{
+"buffer": 0,
+"byteOffset": 7860,
+"byteLength": 4716
+},
+{
+"buffer": 0,
+"byteOffset": 12576,
+"byteLength": 4704
+},
+{
+"buffer": 0,
+"byteOffset": 17280,
+"byteLength": 720
+}
+],
+"buffers": [
+{
+"byteLength": 18000
+}
+]
+}

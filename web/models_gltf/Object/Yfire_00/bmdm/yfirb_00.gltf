@@ -1,0 +1,319 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "yfirb_00",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "yfirb_00",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 288,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 314,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 314,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 314,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 235,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "fireshaft",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+},
+{
+"name": "fireshaft(2)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 3
+}
+}
+},
+{
+"name": "fireshaft(3)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 6
+}
+}
+},
+{
+"name": "fireshaft(4)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 9
+}
+}
+},
+{
+"name": "fireshaft(5)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 12
+}
+}
+},
+{
+"name": "fireshaft(6)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 15
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+},
+{
+"source": 13
+},
+{
+"source": 14
+},
+{
+"source": 15
+},
+{
+"source": 16
+},
+{
+"source": 17
+}
+],
+"images": [
+{
+"uri": "yfirb_00_tex0.png"
+},
+{
+"uri": "yfirb_00_tex1.png"
+},
+{
+"uri": "yfirb_00_tex2.png"
+},
+{
+"uri": "yfirb_00_tex3.png"
+},
+{
+"uri": "yfirb_00_tex4.png"
+},
+{
+"uri": "yfirb_00_tex5.png"
+},
+{
+"uri": "yfirb_00_tex6.png"
+},
+{
+"uri": "yfirb_00_tex7.png"
+},
+{
+"uri": "yfirb_00_tex8.png"
+},
+{
+"uri": "yfirb_00_tex9.png"
+},
+{
+"uri": "yfirb_00_tex10.png"
+},
+{
+"uri": "yfirb_00_tex11.png"
+},
+{
+"uri": "yfirb_00_tex12.png"
+},
+{
+"uri": "yfirb_00_tex13.png"
+},
+{
+"uri": "yfirb_00_tex14.png"
+},
+{
+"uri": "yfirb_00_tex15.png"
+},
+{
+"uri": "yfirb_00_tex16.png"
+},
+{
+"uri": "yfirb_00_tex17.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 314,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 314,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 314,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 288,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 3776
+},
+{
+"buffer": 0,
+"byteOffset": 3776,
+"byteLength": 2512
+},
+{
+"buffer": 0,
+"byteOffset": 6288,
+"byteLength": 3768
+},
+{
+"buffer": 0,
+"byteOffset": 10056,
+"byteLength": 3768
+},
+{
+"buffer": 0,
+"byteOffset": 13824,
+"byteLength": 576
+}
+],
+"buffers": [
+{
+"byteLength": 14400
+}
+]
+}

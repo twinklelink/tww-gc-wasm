@@ -1,0 +1,761 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "model",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "model",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 1017,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 1110,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 1110,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 1109,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 831,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "lambert10_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "lambert11_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "lambert17_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 31
+}
+}
+},
+{
+"name": "lambert18_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 30
+}
+}
+},
+{
+"name": "lambert19_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 29
+}
+}
+},
+{
+"name": "lambert20_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 28
+}
+}
+},
+{
+"name": "lambert21_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 27
+}
+}
+},
+{
+"name": "lambert22_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 26
+}
+}
+},
+{
+"name": "lambert23_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 25
+}
+}
+},
+{
+"name": "lambert24_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 24
+}
+}
+},
+{
+"name": "lambert25_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 23
+}
+}
+},
+{
+"name": "lambert26_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 22
+}
+}
+},
+{
+"name": "lambert27_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 21
+}
+}
+},
+{
+"name": "lambert28_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 20
+}
+}
+},
+{
+"name": "lambert30_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 19
+}
+}
+},
+{
+"name": "lambert31_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 18
+}
+}
+},
+{
+"name": "lambert32_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 17
+}
+}
+},
+{
+"name": "lambert33_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 16
+}
+}
+},
+{
+"name": "lambert34_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 15
+}
+}
+},
+{
+"name": "lambert35_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 14
+}
+}
+},
+{
+"name": "lambert36_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 13
+}
+}
+},
+{
+"name": "lambert37_v_x",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 12
+}
+}
+},
+{
+"name": "lambert40_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 11
+}
+}
+},
+{
+"name": "lambert41_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 10
+}
+}
+},
+{
+"name": "lambert4_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 9
+}
+}
+},
+{
+"name": "lambert6_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 8
+}
+}
+},
+{
+"name": "lambert7_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 5
+}
+}
+},
+{
+"name": "lambert83_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 4
+}
+}
+},
+{
+"name": "lambert86_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 3
+}
+}
+},
+{
+"name": "lambert8_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 2
+}
+}
+},
+{
+"name": "lambert9_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 1
+}
+}
+},
+{
+"name": "zou_siroHARUHANA2_lambert60_v",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+},
+{
+"source": 13
+},
+{
+"source": 14
+},
+{
+"source": 15
+},
+{
+"source": 16
+},
+{
+"source": 17
+},
+{
+"source": 18
+},
+{
+"source": 19
+},
+{
+"source": 20
+},
+{
+"source": 21
+},
+{
+"source": 22
+},
+{
+"source": 23
+},
+{
+"source": 24
+},
+{
+"source": 25
+},
+{
+"source": 26
+},
+{
+"source": 27
+},
+{
+"source": 28
+},
+{
+"source": 29
+},
+{
+"source": 30
+},
+{
+"source": 31
+}
+],
+"images": [
+{
+"uri": "model_tex0.png"
+},
+{
+"uri": "model_tex1.png"
+},
+{
+"uri": "model_tex2.png"
+},
+{
+"uri": "model_tex3.png"
+},
+{
+"uri": "model_tex4.png"
+},
+{
+"uri": "model_tex5.png"
+},
+{
+"uri": "model_tex6.png"
+},
+{
+"uri": "model_tex7.png"
+},
+{
+"uri": "model_tex8.png"
+},
+{
+"uri": "model_tex9.png"
+},
+{
+"uri": "model_tex10.png"
+},
+{
+"uri": "model_tex11.png"
+},
+{
+"uri": "model_tex12.png"
+},
+{
+"uri": "model_tex13.png"
+},
+{
+"uri": "model_tex14.png"
+},
+{
+"uri": "model_tex15.png"
+},
+{
+"uri": "model_tex16.png"
+},
+{
+"uri": "model_tex17.png"
+},
+{
+"uri": "model_tex18.png"
+},
+{
+"uri": "model_tex19.png"
+},
+{
+"uri": "model_tex20.png"
+},
+{
+"uri": "model_tex21.png"
+},
+{
+"uri": "model_tex22.png"
+},
+{
+"uri": "model_tex23.png"
+},
+{
+"uri": "model_tex24.png"
+},
+{
+"uri": "model_tex25.png"
+},
+{
+"uri": "model_tex26.png"
+},
+{
+"uri": "model_tex27.png"
+},
+{
+"uri": "model_tex28.png"
+},
+{
+"uri": "model_tex29.png"
+},
+{
+"uri": "model_tex30.png"
+},
+{
+"uri": "model_tex31.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 1109,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 1109,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 1109,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 1017,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 13320
+},
+{
+"buffer": 0,
+"byteOffset": 13320,
+"byteLength": 8880
+},
+{
+"buffer": 0,
+"byteOffset": 22200,
+"byteLength": 13308
+},
+{
+"buffer": 0,
+"byteOffset": 35508,
+"byteLength": 13308
+},
+{
+"buffer": 0,
+"byteOffset": 48816,
+"byteLength": 2034
+}
+],
+"buffers": [
+{
+"byteLength": 50850
+}
+]
+}

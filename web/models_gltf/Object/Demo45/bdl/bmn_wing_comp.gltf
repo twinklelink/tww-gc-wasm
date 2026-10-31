@@ -1,0 +1,286 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "bmn_wing_comp",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "bmn_wing_comp",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 312,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 341,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 340,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 340,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 255,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "bm_bag_bm_bag",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 12
+}
+}
+},
+{
+"name": "bmnbody_kubi",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 11
+}
+}
+},
+{
+"name": "bmnhead01_SC_eye1",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 10
+}
+}
+},
+{
+"name": "bmnhead01_kuchi1",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 9
+}
+}
+},
+{
+"name": "bmnwing_new_bmnwing_uwing",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 7
+}
+}
+},
+{
+"name": "bmnwing_new_bmnwing_uwing(2)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+}
+],
+"images": [
+{
+"uri": "bmn_wing_comp_tex0.png"
+},
+{
+"uri": "bmn_wing_comp_tex1.png"
+},
+{
+"uri": "bmn_wing_comp_tex2.png"
+},
+{
+"uri": "bmn_wing_comp_tex3.png"
+},
+{
+"uri": "bmn_wing_comp_tex4.png"
+},
+{
+"uri": "bmn_wing_comp_tex5.png"
+},
+{
+"uri": "bmn_wing_comp_tex6.png"
+},
+{
+"uri": "bmn_wing_comp_tex7.png"
+},
+{
+"uri": "bmn_wing_comp_tex8.png"
+},
+{
+"uri": "bmn_wing_comp_tex9.png"
+},
+{
+"uri": "bmn_wing_comp_tex10.png"
+},
+{
+"uri": "bmn_wing_comp_tex11.png"
+},
+{
+"uri": "bmn_wing_comp_tex12.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 340,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 340,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 340,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 312,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 4092
+},
+{
+"buffer": 0,
+"byteOffset": 4092,
+"byteLength": 2724
+},
+{
+"buffer": 0,
+"byteOffset": 6816,
+"byteLength": 4080
+},
+{
+"buffer": 0,
+"byteOffset": 10896,
+"byteLength": 4080
+},
+{
+"buffer": 0,
+"byteOffset": 14976,
+"byteLength": 624
+}
+],
+"buffers": [
+{
+"byteLength": 15600
+}
+]
+}

@@ -1,0 +1,279 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "ba",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "ba",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 2229,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 2432,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 2432,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 2431,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 1823,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "ba_body",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 15
+}
+}
+},
+{
+"name": "ba_eye",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 14
+}
+}
+},
+{
+"name": "ba_mayu",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 13
+}
+}
+},
+{
+"name": "ba_mouth",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 11
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+},
+{
+"source": 13
+},
+{
+"source": 14
+},
+{
+"source": 15
+}
+],
+"images": [
+{
+"uri": "ba_tex0.png"
+},
+{
+"uri": "ba_tex1.png"
+},
+{
+"uri": "ba_tex2.png"
+},
+{
+"uri": "ba_tex3.png"
+},
+{
+"uri": "ba_tex4.png"
+},
+{
+"uri": "ba_tex5.png"
+},
+{
+"uri": "ba_tex6.png"
+},
+{
+"uri": "ba_tex7.png"
+},
+{
+"uri": "ba_tex8.png"
+},
+{
+"uri": "ba_tex9.png"
+},
+{
+"uri": "ba_tex10.png"
+},
+{
+"uri": "ba_tex11.png"
+},
+{
+"uri": "ba_tex12.png"
+},
+{
+"uri": "ba_tex13.png"
+},
+{
+"uri": "ba_tex14.png"
+},
+{
+"uri": "ba_tex15.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 2431,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 2431,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 2431,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 2229,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 29184
+},
+{
+"buffer": 0,
+"byteOffset": 29184,
+"byteLength": 19456
+},
+{
+"buffer": 0,
+"byteOffset": 48640,
+"byteLength": 29180
+},
+{
+"buffer": 0,
+"byteOffset": 77820,
+"byteLength": 29172
+},
+{
+"buffer": 0,
+"byteOffset": 106992,
+"byteLength": 4458
+}
+],
+"buffers": [
+{
+"byteLength": 111450
+}
+]
+}

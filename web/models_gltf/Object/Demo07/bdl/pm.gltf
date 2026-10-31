@@ -1,0 +1,235 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "pm",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "pm",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 2286,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 2494,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 2494,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 2494,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 1870,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "pm_all",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 10
+}
+}
+},
+{
+"name": "pm_bag",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 8
+}
+}
+},
+{
+"name": "pm_eye",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 7
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+}
+],
+"images": [
+{
+"uri": "pm_tex0.png"
+},
+{
+"uri": "pm_tex1.png"
+},
+{
+"uri": "pm_tex2.png"
+},
+{
+"uri": "pm_tex3.png"
+},
+{
+"uri": "pm_tex4.png"
+},
+{
+"uri": "pm_tex5.png"
+},
+{
+"uri": "pm_tex6.png"
+},
+{
+"uri": "pm_tex7.png"
+},
+{
+"uri": "pm_tex8.png"
+},
+{
+"uri": "pm_tex9.png"
+},
+{
+"uri": "pm_tex10.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 2493,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 2493,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 2493,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 2286,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 29928
+},
+{
+"buffer": 0,
+"byteOffset": 29928,
+"byteLength": 19952
+},
+{
+"buffer": 0,
+"byteOffset": 49880,
+"byteLength": 29928
+},
+{
+"buffer": 0,
+"byteOffset": 79808,
+"byteLength": 29920
+},
+{
+"buffer": 0,
+"byteOffset": 109728,
+"byteLength": 4572
+}
+],
+"buffers": [
+{
+"byteLength": 114300
+}
+]
+}

@@ -1,0 +1,385 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "ls",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "ls",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 3534,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 3856,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 3855,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 3855,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 2891,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "SC_eyeL",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "SC_eyeR",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "SC_kuchi",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "SC_mayuL",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "SC_mayuR",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "pants",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+},
+{
+"source": 13
+},
+{
+"source": 14
+},
+{
+"source": 15
+},
+{
+"source": 16
+},
+{
+"source": 17
+},
+{
+"source": 18
+},
+{
+"source": 19
+},
+{
+"source": 20
+},
+{
+"source": 21
+},
+{
+"source": 22
+},
+{
+"source": 23
+},
+{
+"source": 24
+},
+{
+"source": 25
+},
+{
+"source": 26
+},
+{
+"source": 27
+},
+{
+"source": 28
+},
+{
+"source": 29
+},
+{
+"source": 30
+},
+{
+"source": 31
+}
+],
+"images": [
+{
+"uri": "ls_tex0.png"
+},
+{
+"uri": "ls_tex1.png"
+},
+{
+"uri": "ls_tex2.png"
+},
+{
+"uri": "ls_tex3.png"
+},
+{
+"uri": "ls_tex4.png"
+},
+{
+"uri": "ls_tex5.png"
+},
+{
+"uri": "ls_tex6.png"
+},
+{
+"uri": "ls_tex7.png"
+},
+{
+"uri": "ls_tex8.png"
+},
+{
+"uri": "ls_tex9.png"
+},
+{
+"uri": "ls_tex10.png"
+},
+{
+"uri": "ls_tex11.png"
+},
+{
+"uri": "ls_tex12.png"
+},
+{
+"uri": "ls_tex13.png"
+},
+{
+"uri": "ls_tex14.png"
+},
+{
+"uri": "ls_tex15.png"
+},
+{
+"uri": "ls_tex16.png"
+},
+{
+"uri": "ls_tex17.png"
+},
+{
+"uri": "ls_tex18.png"
+},
+{
+"uri": "ls_tex19.png"
+},
+{
+"uri": "ls_tex20.png"
+},
+{
+"uri": "ls_tex21.png"
+},
+{
+"uri": "ls_tex22.png"
+},
+{
+"uri": "ls_tex23.png"
+},
+{
+"uri": "ls_tex24.png"
+},
+{
+"uri": "ls_tex25.png"
+},
+{
+"uri": "ls_tex26.png"
+},
+{
+"uri": "ls_tex27.png"
+},
+{
+"uri": "ls_tex28.png"
+},
+{
+"uri": "ls_tex29.png"
+},
+{
+"uri": "ls_tex30.png"
+},
+{
+"uri": "ls_tex31.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 3855,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 3855,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 3855,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 3534,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 46272
+},
+{
+"buffer": 0,
+"byteOffset": 46272,
+"byteLength": 30840
+},
+{
+"buffer": 0,
+"byteOffset": 77112,
+"byteLength": 46260
+},
+{
+"buffer": 0,
+"byteOffset": 123372,
+"byteLength": 46260
+},
+{
+"buffer": 0,
+"byteOffset": 169632,
+"byteLength": 7068
+}
+],
+"buffers": [
+{
+"byteLength": 176700
+}
+]
+}

@@ -1,0 +1,633 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "zl",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "zl",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 36,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 40,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 39,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 39,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 29,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "eyeL",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "eyeLdamA",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "eyeLdamB",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "eyeR",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "eyeRdamA",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "eyeRdamB",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mayuL",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mayuLdamA",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mayuLdamB",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mayuR",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mayuRdamA",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 2
+}
+}
+},
+{
+"name": "mayuRdamB",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_mouth",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_zhead",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+},
+{
+"name": "zelda_all(2)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all(3)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all(4)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all(5)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all(6)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all(7)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_zhead(2)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all(8)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all(9)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all(10)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all(11)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all(12)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "zelda_all(13)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+},
+{
+"source": 13
+},
+{
+"source": 14
+},
+{
+"source": 15
+},
+{
+"source": 16
+},
+{
+"source": 17
+},
+{
+"source": 18
+},
+{
+"source": 19
+},
+{
+"source": 20
+},
+{
+"source": 21
+},
+{
+"source": 22
+},
+{
+"source": 23
+},
+{
+"source": 24
+},
+{
+"source": 25
+},
+{
+"source": 26
+},
+{
+"source": 27
+},
+{
+"source": 28
+},
+{
+"source": 29
+},
+{
+"source": 30
+},
+{
+"source": 31
+}
+],
+"images": [
+{
+"uri": "zl_tex0.png"
+},
+{
+"uri": "zl_tex1.png"
+},
+{
+"uri": "zl_tex2.png"
+},
+{
+"uri": "zl_tex3.png"
+},
+{
+"uri": "zl_tex4.png"
+},
+{
+"uri": "zl_tex5.png"
+},
+{
+"uri": "zl_tex6.png"
+},
+{
+"uri": "zl_tex7.png"
+},
+{
+"uri": "zl_tex8.png"
+},
+{
+"uri": "zl_tex9.png"
+},
+{
+"uri": "zl_tex10.png"
+},
+{
+"uri": "zl_tex11.png"
+},
+{
+"uri": "zl_tex12.png"
+},
+{
+"uri": "zl_tex13.png"
+},
+{
+"uri": "zl_tex14.png"
+},
+{
+"uri": "zl_tex15.png"
+},
+{
+"uri": "zl_tex16.png"
+},
+{
+"uri": "zl_tex17.png"
+},
+{
+"uri": "zl_tex18.png"
+},
+{
+"uri": "zl_tex19.png"
+},
+{
+"uri": "zl_tex20.png"
+},
+{
+"uri": "zl_tex21.png"
+},
+{
+"uri": "zl_tex22.png"
+},
+{
+"uri": "zl_tex23.png"
+},
+{
+"uri": "zl_tex24.png"
+},
+{
+"uri": "zl_tex25.png"
+},
+{
+"uri": "zl_tex26.png"
+},
+{
+"uri": "zl_tex27.png"
+},
+{
+"uri": "zl_tex28.png"
+},
+{
+"uri": "zl_tex29.png"
+},
+{
+"uri": "zl_tex30.png"
+},
+{
+"uri": "zl_tex31.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 39,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 39,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 39,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 36,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 480
+},
+{
+"buffer": 0,
+"byteOffset": 480,
+"byteLength": 312
+},
+{
+"buffer": 0,
+"byteOffset": 792,
+"byteLength": 468
+},
+{
+"buffer": 0,
+"byteOffset": 1260,
+"byteLength": 468
+},
+{
+"buffer": 0,
+"byteOffset": 1728,
+"byteLength": 72
+}
+],
+"buffers": [
+{
+"byteLength": 1800
+}
+]
+}

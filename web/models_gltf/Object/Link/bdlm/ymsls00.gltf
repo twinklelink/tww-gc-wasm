@@ -1,0 +1,203 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "ymsls00",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "ymsls00",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 132,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 144,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 144,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 144,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 108,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "inner",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 4
+}
+}
+},
+{
+"name": "out",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+}
+],
+"images": [
+{
+"uri": "ymsls00_tex0.png"
+},
+{
+"uri": "ymsls00_tex1.png"
+},
+{
+"uri": "ymsls00_tex2.png"
+},
+{
+"uri": "ymsls00_tex3.png"
+},
+{
+"uri": "ymsls00_tex4.png"
+},
+{
+"uri": "ymsls00_tex5.png"
+},
+{
+"uri": "ymsls00_tex6.png"
+},
+{
+"uri": "ymsls00_tex7.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 144,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 144,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 144,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 132,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 1728
+},
+{
+"buffer": 0,
+"byteOffset": 1728,
+"byteLength": 1152
+},
+{
+"buffer": 0,
+"byteOffset": 2880,
+"byteLength": 1728
+},
+{
+"buffer": 0,
+"byteOffset": 4608,
+"byteLength": 1728
+},
+{
+"buffer": 0,
+"byteOffset": 6336,
+"byteLength": 264
+}
+],
+"buffers": [
+{
+"byteLength": 6600
+}
+]
+}

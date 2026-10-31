@@ -1,0 +1,240 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "mo",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "mo",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 402,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 439,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 439,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 438,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 328,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "mo_e1",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 7
+}
+}
+},
+{
+"name": "mo_eye1",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 9
+}
+}
+},
+{
+"name": "mo_hada1",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 7
+}
+}
+},
+{
+"name": "mo_e1(2)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+}
+],
+"images": [
+{
+"uri": "mo_tex0.png"
+},
+{
+"uri": "mo_tex1.png"
+},
+{
+"uri": "mo_tex2.png"
+},
+{
+"uri": "mo_tex3.png"
+},
+{
+"uri": "mo_tex4.png"
+},
+{
+"uri": "mo_tex5.png"
+},
+{
+"uri": "mo_tex6.png"
+},
+{
+"uri": "mo_tex7.png"
+},
+{
+"uri": "mo_tex8.png"
+},
+{
+"uri": "mo_tex9.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 438,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 438,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 438,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 402,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 5268
+},
+{
+"buffer": 0,
+"byteOffset": 5268,
+"byteLength": 3512
+},
+{
+"buffer": 0,
+"byteOffset": 8780,
+"byteLength": 5260
+},
+{
+"buffer": 0,
+"byteOffset": 14040,
+"byteLength": 5256
+},
+{
+"buffer": 0,
+"byteOffset": 19296,
+"byteLength": 804
+}
+],
+"buffers": [
+{
+"byteLength": 20100
+}
+]
+}

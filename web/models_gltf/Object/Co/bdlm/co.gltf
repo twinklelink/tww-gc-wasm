@@ -1,0 +1,291 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "co",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "co",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 60,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 66,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 66,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 65,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 48,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "SC_eye",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 17
+}
+}
+},
+{
+"name": "SC_kuchi",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 16
+}
+}
+},
+{
+"name": "SC_mayu",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 15
+}
+}
+},
+{
+"name": "hada",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 13
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+},
+{
+"source": 13
+},
+{
+"source": 14
+},
+{
+"source": 15
+},
+{
+"source": 16
+},
+{
+"source": 17
+}
+],
+"images": [
+{
+"uri": "co_tex0.png"
+},
+{
+"uri": "co_tex1.png"
+},
+{
+"uri": "co_tex2.png"
+},
+{
+"uri": "co_tex3.png"
+},
+{
+"uri": "co_tex4.png"
+},
+{
+"uri": "co_tex5.png"
+},
+{
+"uri": "co_tex6.png"
+},
+{
+"uri": "co_tex7.png"
+},
+{
+"uri": "co_tex8.png"
+},
+{
+"uri": "co_tex9.png"
+},
+{
+"uri": "co_tex10.png"
+},
+{
+"uri": "co_tex11.png"
+},
+{
+"uri": "co_tex12.png"
+},
+{
+"uri": "co_tex13.png"
+},
+{
+"uri": "co_tex14.png"
+},
+{
+"uri": "co_tex15.png"
+},
+{
+"uri": "co_tex16.png"
+},
+{
+"uri": "co_tex17.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 65,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 65,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 65,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 60,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 792
+},
+{
+"buffer": 0,
+"byteOffset": 792,
+"byteLength": 528
+},
+{
+"buffer": 0,
+"byteOffset": 1320,
+"byteLength": 780
+},
+{
+"buffer": 0,
+"byteOffset": 2100,
+"byteLength": 780
+},
+{
+"buffer": 0,
+"byteOffset": 2880,
+"byteLength": 120
+}
+],
+"buffers": [
+{
+"byteLength": 3000
+}
+]
+}

@@ -1,0 +1,158 @@
+name: Build TWW WASM (full)
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: mymindstorm/setup-emsdk@v14
+        with:
+          version: '3.1.6'
+
+      - name: Build platform + GX layer
+        run: |
+          GXINC="-I tww-decomp-include -I gx -I core"
+          emcc -O1 -c $GXINC core/platform.c -o platform.o
+          emcc -O1 -c $GXINC core/iso.c -o iso.o
+          emcc -O1 -c $GXINC core/render.c -o render.o
+          # dolphin 目录被排除后，GXFIFO / __OSBusClock 等硬件层符号没有实体，
+          # 在这个桩文件里补上（详见文件内注释）
+          emcc -O1 -c $GXINC core/dolphin_stub.c -o dolphin_stub.o
+          emcc -O1 -std=c++17 -c $GXINC gx/gx2gl.cpp -o gx.o
+          echo "platform + gx OK"
+
+      - name: Build game sources
+        run: |
+          INC="-I tww-decomp-include -I tww-assets-headers -I tww-decomp-src -I tww-decomp-src/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common/Include -I tww-decomp-src/PowerPC_EABI_Support/MSL/MSL_C/MSL_Common_Embedded/Math/Include -I tww-decomp-src/PowerPC_EABI_Support/MSL/MSL_C++/MSL_Common/Include -I tww-decomp-src/PowerPC_EABI_Support/Runtime/Inc -I gx -I core"
+          mkdir -p obj
+          : > err.log
+          : > fail.txt
+
+          # 先把要编译的文件列出来（排除规则与之前一致），再交给 xargs 并行。
+          # 947 个 TU 串行跑要很久，CI runner 有 2 核，用 -P 4 覆盖 IO 等待。
+          # 每个编译单元独立进程、独立输出文件，无需加锁。
+          find tww-decomp-src \( -name "*.cpp" -o -name "*.c" \) \
+            | grep -v -e '/dolphin/' \
+                      -e '/PowerPC_EABI_Support/MSL/.*Src/' \
+                      -e '/MSL/MSL_C/MSL_Common_Embedded/Math/' \
+                      -e '/PowerPC_EABI_Support/Runtime/' \
+                      -e '/MetroTRK/' \
+            # 排除说明（逐个都是实打实的原因，别再无脑加）：
+            #   DynamicLink.c / f_pc_profile_lst.c —— 这两个 .c 根本不存在
+            #     （实际是 .cpp），保留是为了跟原项目一致，属无害的空排除。
+            #     注意：绝不能写成 DynamicLink.cpp —— 那是 REL 链接管理器，
+            #     排除它会让 cDyl_InitAsync 相关符号缺失。
+            #   d_a_shand.cpp 原先因为 hio_set 与 d_a_fganon.cpp 重复符号被排除。
+            #     现已把两边的 hio_set 都改成 static（18 个 actor 里另外 16 个
+            #     本来就是 static，这两个是反编译漏掉的），冲突解除。
+            | grep -v -E '/(DynamicLink\.c|f_pc_profile_lst\.c)$' \
+            > srcs.txt
+          echo "to compile: $(wc -l < srcs.txt)"
+
+          cat srcs.txt | xargs -P 4 -I{} sh -c '
+            f="{}"
+            n="$(printf "%s" "${f%.*}" | tr "/" "_")"
+            case "$f" in
+              *.c) n="c_$n"; STD="";;
+              *)   # 必须是 C++11，不能是 C++98：
+                   # f_op_actor.h 的 fopAc_cullSizeBox 有用户定义的构造函数
+                   # （fopAc_cullSizeBox(cXyz,cXyz)），而它又是 union 成员。
+                   # C++98 禁止 union 含带构造函数的成员，所有 include 了
+                   # f_op_actor.h 的 TU 都会失败（实测 3xx 个）。
+                   # -fpermissive 放行 JAISequenceMgr.h 里 `f32 f32;` 这类
+                   # 成员名与类型名同名的历史写法。
+                   # -DNULL=0 因为 dolphin/types.h 用了 NULL 却没包含 stddef.h
+                   STD="-std=c++11 -fpermissive -DNULL=0";;
+            esac
+            emcc -O1 $STD -c '"$INC"' "$f" -o "obj/$n.o" 2>>err.log \
+              || echo "FAIL $f" >> fail.txt
+          '
+
+          # decomp 入口的 C 链接包装。必须编进来：它是
+          # _tww_init/_tww_frame 通向 fapGm_Create/fapGm_Execute 的唯一引用链，
+          # 少了它 wasm-ld 会把 532 个 recomp .o 全部 DCE 掉。
+          # 依赖 decomp 头文件，所以放在这一步而不是 platform 那一步。
+          em++ -O1 -std=c++11 -fpermissive -DNULL=0 -c $INC \
+              core/recomp_entry.cpp -o recomp_entry.o \
+              || echo "FAIL core/recomp_entry.cpp" >> fail.txt
+
+          echo "objs: $(ls obj/*.o 2>/dev/null | wc -l)"
+          echo "expected: $(wc -l < srcs.txt)"
+          if [ -s fail.txt ]; then
+            echo "=== 编译失败 $(grep -c FAIL fail.txt) 个（完整清单）==="
+            cat fail.txt
+            echo "=== 失败原因归类（按错误行频次）==="
+            grep -oE "error: [^:]{0,60}" err.log | sort | uniq -c | sort -rn | head -20
+          fi
+
+      - name: Link WASM
+        run: |
+          ls -la platform.o iso.o render.o gx.o dolphin_stub.o
+          echo "obj count: $(ls obj/*.o 2>/dev/null | wc -l)"
+          OBJS=$(find obj -name "*.o" 2>/dev/null)
+          # 注意：不能用 --unresolved-symbols=ignore-all。
+          # 它让 ld 不去解析任何未定义符号，配合 DCE 会进一步扩大删除范围
+          # （曾经 1.6MB 的 obj 链出 57KB 空壳就是这个组合导致的）。
+          # 只保留 --allow-undefined：缺失符号变成 import，链接能出产物，
+          # 但至少不会把 recomp 代码静默吞掉。
+          LINK_IGNORE="-Wl,--allow-undefined"
+          emcc -O1 -sMODULARIZE=1 -sEXPORT_NAME=TWWCore \
+            -sALLOW_MEMORY_GROWTH=1 -sINITIAL_MEMORY=268435456 \
+            -sEXPORTED_RUNTIME_METHODS='["cwrap","ccall","HEAPU8"]' \
+            -sEXPORTED_FUNCTIONS='["_tww_init","_tww_frame","_tww_step","_tww_present","_tww_set_frame_rate","_tww_frame_scale","_tww_set_res","_tww_get_res_w","_tww_get_res_h","_tww_get_frame","_tww_input","_tww_memory","_tww_mem_size","_tww_poke32","_tww_peek32","_tww_poke8","_tww_peek8","_tww_card_write","_tww_card_read","_malloc","_free","_iso_load","_iso_mount","_iso_ptr","_iso_count","_tww_skip","_tww_get_aspect","_tww_card_ptr","_tww_set_boot_mask","_tww_booted","_gx2gl_set_output_size","_gx2gl_set_efb_size","_gx2gl_set_aspect_mode","_gx2gl_stream_len","_gx2gl_stream_data","_gx2gl_stream_reset","_gx2gl_out_w","_gx2gl_out_h","_gx2gl_efb_w","_gx2gl_efb_h","_gx2gl_aspect_scale","_gx2gl_vp_scale_x","_gx2gl_vp_scale_y"]' \
+            -sERROR_ON_UNDEFINED_SYMBOLS=0 \
+            -sWARN_ON_UNDEFINED_SYMBOLS=0 \
+            $LINK_IGNORE --error-limit=0 \
+            platform.o iso.o render.o gx.o dolphin_stub.o recomp_entry.o $OBJS -o core.js
+          ls -la core.js core.wasm
+
+          # 体积哨兵：recomp 代码如果没进引用链，wasm 会小得不正常。
+          # 正常应该几十 MB 量级；几 KB~几十 KB 说明 DCE 把游戏代码丢了。
+          SZ=$(stat -c%s core.wasm)
+          echo "core.wasm = $SZ bytes"
+          if [ "$SZ" -lt 1000000 ]; then
+            echo "::warning::core.wasm 仅 $SZ 字节，recomp 代码很可能被 DCE 掉了"
+            echo "  检查：_tww_init/_tww_frame 是否真的调用到 core/recomp_entry.cpp 的包装"
+            echo "  可用 -Wl,--no-gc-sections 或 -Wl,--whole-archive 验证是否为 DCE 所致"
+          fi
+
+      - name: Compress web payload
+        # 索引与文本库原始约 2.05 MB，gzip 后 269 KB（省 87%）。
+        # 生成 .gz 后由前端用 DecompressionStream 解压，
+        # 不依赖服务器是否配置 Content-Encoding（静态托管通常没配）。
+        run: |
+          python3 tools/compress_web.py --webroot web \
+              --min-size 32768 --level 9 --out web_compressed.json
+
+      - name: Deploy web
+        run: |
+          mkdir -p site
+          cp web/* site/          # 含 .gz
+          # gx2gl.js 的真源在 gx/（与 gx2gl.cpp / gx2gl.h 放一起）。
+          # 不要在 web/ 再放一份副本 —— 两份会分叉，
+          # 而 index.html 引用的是根目录的 gx2gl.js，
+          # 副本过期等于线上跑旧代码且不报任何错。
+          cp gx/gx2gl.js site/
+          cp core.js core.wasm site/
+          touch site/.nojekyll
+          # 自检：确认部署的 gx2gl.js 就是 gx/ 的真源
+          cmp -s gx/gx2gl.js site/gx2gl.js || echo "::warning::gx2gl.js 部署不一致"
+
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tww-wasm
+          path: core.wasm

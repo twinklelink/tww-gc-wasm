@@ -1,0 +1,586 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "cl",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "cl",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 810,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 884,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 884,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 883,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 662,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "ear",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "eyeL",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "eyeLdamA",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "eyeLdamB",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "eyeR",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "eyeRdamA",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "eyeRdamB",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "face",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mayuL",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mayuLdamA",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mayuLdamB",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mayuR",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mayuRdamA",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mayuRdamB",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "mouth",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "podA",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 0
+}
+}
+},
+{
+"name": "sleeve",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "ear(2)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "ear(3)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "ear(4)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "ear(5)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "ear(6)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "ear(7)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+},
+{
+"name": "ear(8)",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+]
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+},
+{
+"source": 9
+},
+{
+"source": 10
+},
+{
+"source": 11
+},
+{
+"source": 12
+},
+{
+"source": 13
+},
+{
+"source": 14
+},
+{
+"source": 15
+},
+{
+"source": 16
+},
+{
+"source": 17
+},
+{
+"source": 18
+},
+{
+"source": 19
+},
+{
+"source": 20
+},
+{
+"source": 21
+},
+{
+"source": 22
+},
+{
+"source": 23
+},
+{
+"source": 24
+},
+{
+"source": 25
+},
+{
+"source": 26
+},
+{
+"source": 27
+},
+{
+"source": 28
+},
+{
+"source": 29
+},
+{
+"source": 30
+},
+{
+"source": 31
+}
+],
+"images": [
+{
+"uri": "cl_tex0.png"
+},
+{
+"uri": "cl_tex1.png"
+},
+{
+"uri": "cl_tex2.png"
+},
+{
+"uri": "cl_tex3.png"
+},
+{
+"uri": "cl_tex4.png"
+},
+{
+"uri": "cl_tex5.png"
+},
+{
+"uri": "cl_tex6.png"
+},
+{
+"uri": "cl_tex7.png"
+},
+{
+"uri": "cl_tex8.png"
+},
+{
+"uri": "cl_tex9.png"
+},
+{
+"uri": "cl_tex10.png"
+},
+{
+"uri": "cl_tex11.png"
+},
+{
+"uri": "cl_tex12.png"
+},
+{
+"uri": "cl_tex13.png"
+},
+{
+"uri": "cl_tex14.png"
+},
+{
+"uri": "cl_tex15.png"
+},
+{
+"uri": "cl_tex16.png"
+},
+{
+"uri": "cl_tex17.png"
+},
+{
+"uri": "cl_tex18.png"
+},
+{
+"uri": "cl_tex19.png"
+},
+{
+"uri": "cl_tex20.png"
+},
+{
+"uri": "cl_tex21.png"
+},
+{
+"uri": "cl_tex22.png"
+},
+{
+"uri": "cl_tex23.png"
+},
+{
+"uri": "cl_tex24.png"
+},
+{
+"uri": "cl_tex25.png"
+},
+{
+"uri": "cl_tex26.png"
+},
+{
+"uri": "cl_tex27.png"
+},
+{
+"uri": "cl_tex28.png"
+},
+{
+"uri": "cl_tex29.png"
+},
+{
+"uri": "cl_tex30.png"
+},
+{
+"uri": "cl_tex31.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 883,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 883,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 883,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 810,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 10608
+},
+{
+"buffer": 0,
+"byteOffset": 10608,
+"byteLength": 7072
+},
+{
+"buffer": 0,
+"byteOffset": 17680,
+"byteLength": 10604
+},
+{
+"buffer": 0,
+"byteOffset": 28284,
+"byteLength": 10596
+},
+{
+"buffer": 0,
+"byteOffset": 38880,
+"byteLength": 1620
+}
+],
+"buffers": [
+{
+"byteLength": 40500
+}
+]
+}

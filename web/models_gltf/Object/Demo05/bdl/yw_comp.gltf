@@ -1,0 +1,223 @@
+{
+"asset": {
+"version": "2.0",
+"generator": "bdl2gltf"
+},
+"scene": 0,
+"scenes": [
+{
+"nodes": [
+0
+]
+}
+],
+"nodes": [
+{
+"name": "yw_comp",
+"mesh": 0
+}
+],
+"meshes": [
+{
+"name": "yw_comp",
+"primitives": [
+{
+"material": 0,
+"indices": {
+"bufferView": 4,
+"componentType": 5123,
+"count": 2010,
+"type": "SCALAR"
+},
+"mode": 4,
+"attributes": {
+"POSITION": {
+"bufferView": 0,
+"componentType": 5126,
+"count": 2193,
+"type": "VEC3"
+},
+"TEXCOORD_0": {
+"bufferView": 1,
+"componentType": 5126,
+"count": 2193,
+"type": "VEC2"
+},
+"NORMAL": {
+"bufferView": 2,
+"componentType": 5126,
+"count": 2193,
+"type": "VEC3"
+},
+"COLOR_0": {
+"bufferView": 3,
+"componentType": 5126,
+"count": 1644,
+"type": "VEC4"
+}
+}
+}
+]
+}
+],
+"materials": [
+{
+"name": "eye",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 8
+}
+}
+},
+{
+"name": "kami",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 7
+}
+}
+},
+{
+"name": "tumasaki",
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+1,
+1,
+1,
+1
+],
+"baseColorTexture": {
+"index": 5
+}
+}
+}
+],
+"textures": [
+{
+"source": 0
+},
+{
+"source": 1
+},
+{
+"source": 2
+},
+{
+"source": 3
+},
+{
+"source": 4
+},
+{
+"source": 5
+},
+{
+"source": 6
+},
+{
+"source": 7
+},
+{
+"source": 8
+}
+],
+"images": [
+{
+"uri": "yw_comp_tex0.png"
+},
+{
+"uri": "yw_comp_tex1.png"
+},
+{
+"uri": "yw_comp_tex2.png"
+},
+{
+"uri": "yw_comp_tex3.png"
+},
+{
+"uri": "yw_comp_tex4.png"
+},
+{
+"uri": "yw_comp_tex5.png"
+},
+{
+"uri": "yw_comp_tex6.png"
+},
+{
+"uri": "yw_comp_tex7.png"
+},
+{
+"uri": "yw_comp_tex8.png"
+}
+],
+"accessors": [
+{
+"bufferView": 1,
+"componentType": 5126,
+"count": 2192,
+"type": "VEC2"
+},
+{
+"bufferView": 2,
+"componentType": 5126,
+"count": 2192,
+"type": "VEC3"
+},
+{
+"bufferView": 3,
+"componentType": 5126,
+"count": 2192,
+"type": "VEC4"
+},
+{
+"bufferView": 4,
+"componentType": 5123,
+"count": 2010,
+"type": "SCALAR"
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteOffset": 0,
+"byteLength": 26316
+},
+{
+"buffer": 0,
+"byteOffset": 26316,
+"byteLength": 17544
+},
+{
+"buffer": 0,
+"byteOffset": 43860,
+"byteLength": 26316
+},
+{
+"buffer": 0,
+"byteOffset": 70176,
+"byteLength": 26304
+},
+{
+"buffer": 0,
+"byteOffset": 96480,
+"byteLength": 4020
+}
+],
+"buffers": [
+{
+"byteLength": 100500
+}
+]
+}
