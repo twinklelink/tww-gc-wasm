@@ -2,8 +2,32 @@
 const $=id=>document.getElementById(id);
 const log=m=>{const l=$('log');if(l){l.textContent+=m+'\n';l.scrollTop=l.scrollHeight;}};
 
-window.TWW={memBase:0x80000000,heapU8:null,exports:null,gl:null,
-  landscape:false,flipX:false,skipReq:false,lastStartTap:0};
+window.TWW={memBase:0x80000000,exports:null,gl:null,
+  landscape:false,flipX:false,skipReq:false,lastStartTap:0,
+  /* 必须每次重新取：WASM 内存增长（memory.grow）后旧的 ArrayBuffer 会
+     detached，缓存的视图再访问就是空的或抛错。
+     加载 ISO 时内存一定会涨，缓存视图等于埋雷。 */
+  get heapU8(){
+    return this.exports ? new Uint8Array(this.exports.HEAPU8.buffer) : null;
+  }};
+
+/* WASM 内存访问助手。
+   裸写 M.HEAPU8.buffer + ptr 既容易算错偏移，也要自己记得 free。
+   统一走这里，调用点不出现裸指针算术。 */
+const WasmMem={
+  /* 把字节拷进 WASM 堆，返回指针。调用方在用完后调 free() */
+  alloc(M,bytes){
+    const ptr=M._malloc(bytes.length);
+    if(!ptr)throw new Error('malloc 失败: '+bytes.length+' 字节');
+    new Uint8Array(M.HEAPU8.buffer,ptr,bytes.length).set(bytes);
+    return ptr;
+  },
+  /* 从 WASM 堆拷出一段（slice 出来，避免底层缓冲失效） */
+  read(M,ptr,len){
+    return new Uint8Array(M.HEAPU8.buffer,ptr,len).slice();
+  },
+  free(M,ptr){ if(ptr)M._free(ptr); }
+};
 
 /* ---------- 核心 ---------- */
 async function bootCore(){
@@ -11,7 +35,6 @@ async function bootCore(){
   try{
     const M=await TWWCore();
     TWW.exports=M;
-    TWW.heapU8=new Uint8Array(M.HEAPU8.buffer);
     M._tww_init();
     const cv=$('cv');
     const gl=cv.getContext('webgl',{antialias:false,alpha:false});
@@ -39,8 +62,8 @@ async function loadROM(file){
   await idbSave('rom',buf);
   if(TWW.exports&&TWW.exports._iso_load){
     const M=TWW.exports;
-    const ptr=M._malloc(buf.byteLength);
-    new Uint8Array(M.HEAPU8.buffer,ptr,buf.byteLength).set(new Uint8Array(buf));
+    /* 镜像要常驻给 iso_find 用，这里不能 free */
+    const ptr=WasmMem.alloc(M,new Uint8Array(buf));
     M._iso_load(ptr,buf.byteLength);
     M._iso_mount();
     log('ISO 挂载完成');

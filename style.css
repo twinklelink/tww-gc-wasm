@@ -1,4 +1,36 @@
-:root{--p:#6750a4;--bg:#0a1628;--cd:#132033;--tx:#cfe4f5;--mu:#7a9abf;--ln:#24405e}
+/* 游戏内文本字体
+ * ----------------------------------------------------------------
+ * 英文用 font1.ttf，中文用 font2.ttf，都放网页根目录。
+ *
+ * 为什么分两个字族、而不是一个字体文件：
+ *   靠 font-family 回退链自动分离中英文 —— 浏览器是**逐字符**回落的，
+ *   英文字符在 TWWLatin 里找得到字形就用它；
+ *   中文字符 TWWLatin 没有对应字形，自动落到 TWWCJK。
+ *   不需要在 JS 里判断字符编码范围，混排一句话也各自用对字体。
+ *
+ * 字体文件缺失时的行为：
+ *   @font-face 加载失败只让该字族无效，后面的字族继续生效，
+ *   文字照常显示（只是用回退字形），不会白屏。
+ *   所以只放了 font2.ttf 也能跑，英文会借用中文字体里的西文字形。
+ *
+ * 改文件名只改这里（src 的 url），JS 侧引用的是字族名，不受影响。
+ */
+@font-face{
+  font-family:'TWWLatin';
+  src:url('font1.ttf') format('truetype');
+  font-display:swap;
+}
+@font-face{
+  font-family:'TWWCJK';
+  src:url('font2.ttf') format('truetype');
+  font-display:swap;
+}
+
+:root{
+  /* 游戏字族链：与 text.js 的 font 保持一致（英文在前、中文在后，
+     浏览器逐字符回落，自动分离中英文）。UI 与 Canvas 共用这一份。 */
+  --font-game:'TWWLatin','TWWCJK','PingFang SC','Noto Sans CJK SC',sans-serif;
+  --p:#6750a4;--bg:#0a1628;--cd:#132033;--tx:#cfe4f5;--mu:#7a9abf;--ln:#24405e}
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;
   user-select:none;-webkit-user-select:none;touch-action:none}
 html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--tx);
@@ -82,8 +114,10 @@ button.g{background:#1a3a5a;color:#bdf;border:1px solid var(--ln)}
   align-items:center;justify-content:center;gap:10px;
   background:radial-gradient(#0b1e33,#03070d 78%);transition:opacity .4s}
 #splash.gone{opacity:0;pointer-events:none}
-#splash h1{font-size:28px;font-weight:300;color:#7fd8ff;letter-spacing:.1em}
-#splash p{color:var(--mu);font-size:12px;letter-spacing:.2em}
+#splash h1{font-size:28px;font-weight:300;color:#7fd8ff;letter-spacing:.1em;
+  font-family:var(--font-game)}
+#splash p{color:var(--mu);font-size:12px;letter-spacing:.2em;
+  font-family:var(--font-game)}
 #load-status{font-size:12px;color:var(--mu);margin-top:10px}
 #start-btn{margin-top:16px;padding:11px 40px;border-radius:24px;border:1.5px solid #4af;
   background:#4af2;color:#cff;font-size:15px;cursor:pointer}

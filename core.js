@@ -1715,6 +1715,114 @@ var ASM_CONSTS = {
   }
 
   /** @type {function(...*):?} */
+  function __Z11cDyl_Unlinks(
+  ) {
+  err('missing function: _Z11cDyl_Unlinks'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z11fpcM_DeletePv(
+  ) {
+  err('missing function: _Z11fpcM_DeletePv'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z12fpcM_IsPausePvh(
+  ) {
+  err('missing function: _Z12fpcM_IsPausePvh'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z13mDoGph_Createv(
+  ) {
+  err('missing function: _Z13mDoGph_Createv'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z13mDoMch_Createv(
+  ) {
+  err('missing function: _Z13mDoMch_Createv'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z14cDyl_InitAsyncv(
+  ) {
+  err('missing function: _Z14cDyl_InitAsyncv'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z14cDyl_LinkASyncs(
+  ) {
+  err('missing function: _Z14cDyl_LinkASyncs'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z14mDoAud_Executev(
+  ) {
+  err('missing function: _Z14mDoAud_Executev'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z15fpcM_IsCreatingj(
+  ) {
+  err('missing function: _Z15fpcM_IsCreatingj'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z15fpcM_ManagementPFvvES0_(
+  ) {
+  err('missing function: _Z15fpcM_ManagementPFvvES0_'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z16fpcM_PauseEnablePvh(
+  ) {
+  err('missing function: _Z16fpcM_PauseEnablePvh'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z17fpcM_PauseDisablePvh(
+  ) {
+  err('missing function: _Z17fpcM_PauseDisablePvh'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __Z9fpcM_Initv(
+  ) {
+  err('missing function: _Z9fpcM_Initv'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN10JUTGamePad10getGamePadEi(
+  ) {
+  err('missing function: _ZN10JUTGamePad10getGamePadEi'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN10JUTGamePad13clearForResetEv(
+  ) {
+  err('missing function: _ZN10JUTGamePad13clearForResetEv'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN10JUTGamePad4readEv(
+  ) {
+  err('missing function: _ZN10JUTGamePad4readEv'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN10JUTGamePad7CRumble10setEnabledEm(
+  ) {
+  err('missing function: _ZN10JUTGamePad7CRumble10setEnabledEm'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN10JUTGamePadC1ENS_8EPadPortE(
+  ) {
+  err('missing function: _ZN10JUTGamePadC1ENS_8EPadPortE'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
   function __ZN12JUTAssertion10getSDeviceEv(
   ) {
   err('missing function: _ZN12JUTAssertion10getSDeviceEv'); abort(-1);
@@ -1742,6 +1850,24 @@ var ASM_CONSTS = {
   function __ZN14dRes_control_c6getResEPKclP11dRes_info_ci(
   ) {
   err('missing function: _ZN14dRes_control_c6getResEPKclP11dRes_info_ci'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN15mDoGaC_agbCom_c14mDoGaC_ConnectEv(
+  ) {
+  err('missing function: _ZN15mDoGaC_agbCom_c14mDoGaC_ConnectEv'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN15mDoGaC_agbCom_c14mDoGaC_InitialEP18mDoGaC_DataManag_ch(
+  ) {
+  err('missing function: _ZN15mDoGaC_agbCom_c14mDoGaC_InitialEP18mDoGaC_DataManag_ch'); abort(-1);
+  }
+
+  /** @type {function(...*):?} */
+  function __ZN6JUTGba6createEv(
+  ) {
+  err('missing function: _ZN6JUTGba6createEv'); abort(-1);
   }
 
   /** @type {function(...*):?} */
@@ -1950,11 +2076,32 @@ var asmLibraryArg = {
   "OSGetCurrentThread": _OSGetCurrentThread,
   "OSGetStackPointer": _OSGetStackPointer,
   "PPCHalt": _PPCHalt,
+  "_Z11cDyl_Unlinks": __Z11cDyl_Unlinks,
+  "_Z11fpcM_DeletePv": __Z11fpcM_DeletePv,
+  "_Z12fpcM_IsPausePvh": __Z12fpcM_IsPausePvh,
+  "_Z13mDoGph_Createv": __Z13mDoGph_Createv,
+  "_Z13mDoMch_Createv": __Z13mDoMch_Createv,
+  "_Z14cDyl_InitAsyncv": __Z14cDyl_InitAsyncv,
+  "_Z14cDyl_LinkASyncs": __Z14cDyl_LinkASyncs,
+  "_Z14mDoAud_Executev": __Z14mDoAud_Executev,
+  "_Z15fpcM_IsCreatingj": __Z15fpcM_IsCreatingj,
+  "_Z15fpcM_ManagementPFvvES0_": __Z15fpcM_ManagementPFvvES0_,
+  "_Z16fpcM_PauseEnablePvh": __Z16fpcM_PauseEnablePvh,
+  "_Z17fpcM_PauseDisablePvh": __Z17fpcM_PauseDisablePvh,
+  "_Z9fpcM_Initv": __Z9fpcM_Initv,
+  "_ZN10JUTGamePad10getGamePadEi": __ZN10JUTGamePad10getGamePadEi,
+  "_ZN10JUTGamePad13clearForResetEv": __ZN10JUTGamePad13clearForResetEv,
+  "_ZN10JUTGamePad4readEv": __ZN10JUTGamePad4readEv,
+  "_ZN10JUTGamePad7CRumble10setEnabledEm": __ZN10JUTGamePad7CRumble10setEnabledEm,
+  "_ZN10JUTGamePadC1ENS_8EPadPortE": __ZN10JUTGamePadC1ENS_8EPadPortE,
   "_ZN12JUTAssertion10getSDeviceEv": __ZN12JUTAssertion10getSDeviceEv,
   "_ZN12JUTAssertion10showAssertEmPKciS1_": __ZN12JUTAssertion10showAssertEmPKciS1_,
   "_ZN12JUTAssertion19setWarningMessage_fEmPciPKcz": __ZN12JUTAssertion19setWarningMessage_fEmPciPKcz,
   "_ZN13mDoGph_gInf_c5allocEmi": __ZN13mDoGph_gInf_c5allocEmi,
   "_ZN14dRes_control_c6getResEPKclP11dRes_info_ci": __ZN14dRes_control_c6getResEPKclP11dRes_info_ci,
+  "_ZN15mDoGaC_agbCom_c14mDoGaC_ConnectEv": __ZN15mDoGaC_agbCom_c14mDoGaC_ConnectEv,
+  "_ZN15mDoGaC_agbCom_c14mDoGaC_InitialEP18mDoGaC_DataManag_ch": __ZN15mDoGaC_agbCom_c14mDoGaC_InitialEP18mDoGaC_DataManag_ch,
+  "_ZN6JUTGba6createEv": __ZN6JUTGba6createEv,
   "_ZN7JStudio14TFunctionValue18toFunction_outsideEi": __ZN7JStudio14TFunctionValue18toFunction_outsideEi,
   "_ZN7JStudio14TVariableValue7TOutputD2Ev": __ZN7JStudio14TVariableValue7TOutputD2Ev,
   "_ZN8JASystem6Kernel10TSolidHeapC1Ev": __ZN8JASystem6Kernel10TSolidHeapC1Ev,
@@ -2007,6 +2154,21 @@ var _tww_step = Module["_tww_step"] = function() {
 };
 
 /** @type {function(...*):?} */
+var _tww_present = Module["_tww_present"] = function() {
+  return (_tww_present = Module["_tww_present"] = Module["asm"]["tww_present"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_set_boot_mask = Module["_tww_set_boot_mask"] = function() {
+  return (_tww_set_boot_mask = Module["_tww_set_boot_mask"] = Module["asm"]["tww_set_boot_mask"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
+var _tww_booted = Module["_tww_booted"] = function() {
+  return (_tww_booted = Module["_tww_booted"] = Module["asm"]["tww_booted"]).apply(null, arguments);
+};
+
+/** @type {function(...*):?} */
 var _tww_frame_scale = Module["_tww_frame_scale"] = function() {
   return (_tww_frame_scale = Module["_tww_frame_scale"] = Module["asm"]["tww_frame_scale"]).apply(null, arguments);
 };
@@ -2014,11 +2176,6 @@ var _tww_frame_scale = Module["_tww_frame_scale"] = function() {
 /** @type {function(...*):?} */
 var _tww_set_frame_rate = Module["_tww_set_frame_rate"] = function() {
   return (_tww_set_frame_rate = Module["_tww_set_frame_rate"] = Module["asm"]["tww_set_frame_rate"]).apply(null, arguments);
-};
-
-/** @type {function(...*):?} */
-var _tww_present = Module["_tww_present"] = function() {
-  return (_tww_present = Module["_tww_present"] = Module["asm"]["tww_present"]).apply(null, arguments);
 };
 
 /** @type {function(...*):?} */

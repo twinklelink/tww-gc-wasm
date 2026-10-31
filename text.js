@@ -1,12 +1,59 @@
 'use strict';
 /* 中文文本渲染：Canvas fillText + 系统字体，完全绕过旧字库 */
 const TextSys={
-  msgs:{},font:'"ReggaeOne","Noto Sans CJK SC","PingFang SC",sans-serif',
+  msgs:{},
+  /* 字族名定义在 style.css 的 @font-face（英文 font1.ttf / 中文 font2.ttf）。
+     这里只写字族名，不写文件名 —— 换字体文件不用改 JS。
+
+     顺序即回退链：浏览器逐字符回落，英文用 TWWLatin，
+     中文字符 TWWLatin 没有字形会自动落到 TWWCJK。
+     末尾保留系统字体兜底：两个字体都缺失时仍能显示文字。 */
+  font:'"TWWLatin","TWWCJK","PingFang SC","Noto Sans CJK SC",sans-serif',
   loaded:false,scale:1,color:'#ffffff',lineH:1.45,
+  fontsReady:false,
+
+  /* 取文本，优先 .gz。
+     文本库原始 266 KB，gzip 后 89 KB。服务器若已自动加 Content-Encoding，
+     直接 fetch 就行；预压缩文件不会，所以用 DecompressionStream 手动解。
+     失败一律回退未压缩版本。 */
+  async _fetchText(url){
+    const plain=async()=>{
+      const r=await fetch(url);
+      if(!r.ok)throw new Error(url+' HTTP '+r.status);
+      return r.text();
+    };
+    if(typeof DecompressionStream==='undefined')return plain();
+    try{
+      const r=await fetch(url+'.gz');
+      if(!r.ok)throw new Error(r.status);
+      return await new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).text();
+    }catch(e){return plain();}
+  },
+
+  /* 预加载字体。
+     Canvas 的 fillText 在字体未就绪时会静默用回退字形画一次，
+     且**不会**在字体到达后自动重绘 —— 必须先等 fonts 就绪。
+     加载失败也正常返回（字形会退回系统字体），不阻塞游戏。 */
+  async ready(){
+    if(this.fontsReady)return;
+    if(!document.fonts){this.fontsReady=true;return;}
+    try{
+      await Promise.all([
+        document.fonts.load('20px "TWWLatin"').catch(()=>{}),
+        document.fonts.load('20px "TWWCJK"').catch(()=>{})
+      ]);
+      await document.fonts.ready;
+    }catch(e){/* 字体缺失不影响运行 */}
+    this.fontsReady=true;
+  },
+
   async load(url){
     try{
-      const r=await fetch(url||'messages.json');
-      this.msgs=await r.json();
+      const [text]=await Promise.all([
+        this._fetchText(url||'messages.json'),
+        this.ready()
+      ]);
+      this.msgs=JSON.parse(text);
       this.loaded=true;
       log('文本库载入: '+Object.keys(this.msgs).length+' 条');
     }catch(e){log('文本库加载失败: '+e.message);}
