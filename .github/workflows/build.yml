@@ -40,23 +40,44 @@ jobs:
           # 先把要编译的文件列出来（排除规则与之前一致），再交给 xargs 并行。
           # 947 个 TU 串行跑要很久，CI runner 有 2 核，用 -P 4 覆盖 IO 等待。
           # 每个编译单元独立进程、独立输出文件，无需加锁。
+          #
+          # 排除说明（逐个都是实打实的原因，别再无脑加）：
+          #   dolphin / MSL Src / Runtime / MetroTRK —— 与我们的实现重复，
+          #     或依赖 GC 硬件（GX 与 gx2gl.cpp 重复、MSL 与标准库冲突）。
+          #   DynamicLink.c / f_pc_profile_lst.c —— 这两个 .c 根本不存在
+          #     （实际是 .cpp），保留是为了跟原项目一致，属无害的空排除。
+          #     注意：绝不能写成 DynamicLink.cpp —— 那是 REL 链接管理器，
+          #     排除它会让 cDyl_InitAsync 相关符号缺失。
+          #   d_a_shand.cpp 原先因为 hio_set 与 d_a_fganon.cpp 重复符号被排除。
+          #     现已把两边的 hio_set 都改成 static（18 个 actor 里另外 16 个
+          #     本来就是 static，这两个是反编译漏掉的），冲突解除。
+          #   TRK_MINNOW_DOLPHIN / OdemuExi2 —— 与 MetroTRK 同属 TRK 调试内核，
+          #     只是漏了这两个目录。里面是 PowerPC 内联汇编
+          #     （targimpl.c 有 9 处 asm、mpc_7xx_603e.c 有 2 处），
+          #     emcc 编译必失败。游戏运行时也不调用（仅开发机调试用），排除无副作用。
+          #
+          # ⚠️ 注释只能放在整个管道**之前**，绝不能插在 `\` 续行的管道中间。
+          # 续行遇到注释行会提前结束命令：后面的 `| grep ... > srcs.txt`
+          # 变成孤立的语法错误，而 find 的结果会直接打到 stdout。
+          # 后果是 srcs.txt 为空、0 个 TU 被编译、链出空壳 wasm —— 且不报错。
           find tww-decomp-src \( -name "*.cpp" -o -name "*.c" \) \
             | grep -v -e '/dolphin/' \
                       -e '/PowerPC_EABI_Support/MSL/.*Src/' \
                       -e '/MSL/MSL_C/MSL_Common_Embedded/Math/' \
                       -e '/PowerPC_EABI_Support/Runtime/' \
                       -e '/MetroTRK/' \
-            # 排除说明（逐个都是实打实的原因，别再无脑加）：
-            #   DynamicLink.c / f_pc_profile_lst.c —— 这两个 .c 根本不存在
-            #     （实际是 .cpp），保留是为了跟原项目一致，属无害的空排除。
-            #     注意：绝不能写成 DynamicLink.cpp —— 那是 REL 链接管理器，
-            #     排除它会让 cDyl_InitAsync 相关符号缺失。
-            #   d_a_shand.cpp 原先因为 hio_set 与 d_a_fganon.cpp 重复符号被排除。
-            #     现已把两边的 hio_set 都改成 static（18 个 actor 里另外 16 个
-            #     本来就是 static，这两个是反编译漏掉的），冲突解除。
+                      -e '/TRK_MINNOW_DOLPHIN/' \
+                      -e '/OdemuExi2/' \
             | grep -v -E '/(DynamicLink\.c|f_pc_profile_lst\.c)$' \
             > srcs.txt
           echo "to compile: $(wc -l < srcs.txt)"
+          # fail fast：srcs.txt 为空说明上面的管道被破坏（或 find 规则写错）。
+          # 不拦的话会静默编译 0 个文件，链接出一个没有游戏代码的空壳 wasm，
+          # 而且不报任何错 —— 这种失败最难查。
+          if [ ! -s srcs.txt ]; then
+            echo "::error::srcs.txt 为空，排除规则或管道有问���，拒绝继续"
+            exit 1
+          fi
 
           cat srcs.txt | xargs -P 4 -I{} sh -c '
             f="{}"
