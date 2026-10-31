@@ -157,7 +157,22 @@ jobs:
       - name: Deploy web
         run: |
           mkdir -p site
-          cp web/* site/          # 含 .gz
+
+          # 只拷 web/ 根下的普通文件（html/js/css/json/.gz）。
+          #
+          # 不能用 cp web/* ：web/ 下会放资源目录（models_gltf / texture_png /
+          # anims_json / audio），cp 不带 -r 撞上目录就直接失败退出。
+          # 也不能加 -r 全拷：资源约 0.55 GB，而 GitHub Pages 站点上限 1 GB，
+          # 逼近后部署会失败；且每次 push 全量重传，CI 会慢到不可用。
+          #
+          # 资源不进部署包 —— 由使用者在站点部署完成后自行解压到网页根目录。
+          # 前端通过 assets_manifest.json 找资源，与是否经过 CI 无关。
+          find web -maxdepth 1 -type f -exec cp {} site/ \;
+
+          # 提示（不失败）：让日志里能看到 web/ 下有哪些资源目录被跳过
+          ASSET_DIRS=$(find web -maxdepth 1 -mindepth 1 -type d -printf '%f\n' | sort | tr '\n' ' ')
+          [ -n "$ASSET_DIRS" ] && echo "跳过资源目录（由使用者自行放置）: $ASSET_DIRS"
+
           # gx2gl.js 的真源在 gx/（与 gx2gl.cpp / gx2gl.h 放一起）。
           # 不要在 web/ 再放一份副本 —— 两份会分叉，
           # 而 index.html 引用的是根目录的 gx2gl.js，
@@ -165,8 +180,20 @@ jobs:
           cp gx/gx2gl.js site/
           cp core.js core.wasm site/
           touch site/.nojekyll
-          # 自检：确认部署的 gx2gl.js 就是 gx/ 的真源
+
+          # 自检 1：确认部署的 gx2gl.js 就是 gx/ 的真源
           cmp -s gx/gx2gl.js site/gx2gl.js || echo "::warning::gx2gl.js 部署不一致"
+          # 自检 2：核心文件缺失 = 白屏，直接失败
+          for f in index.html main.js gx2gl.js core.js core.wasm; do
+            [ -f "site/$f" ] || { echo "::error::site/$f 缺失"; exit 1; }
+          done
+          # 自检 3：manifest 缺失只警告 —— 前端会退化到默认路径，页面仍能起，
+          #   只是 url() 拼接不准。使用者放了资源后自己跑
+          #   tools/build_manifest.py 生成索引即可。
+          [ -f "site/assets_manifest.json" ] || [ -f "site/assets_manifest_lite.json" ] \
+            || echo "::warning::没有资源索引，前端将退化到默认路径"
+          echo "部署内容:"; ls -la site/
+          echo "core.wasm 大小: $(stat -c%s site/core.wasm) 字节"
 
       - uses: peaceiris/actions-gh-pages@v4
         with:

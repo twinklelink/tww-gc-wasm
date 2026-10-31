@@ -1,0 +1,24 @@
+# 资源目录：由使用者自行解压到网页根目录，不进仓库
+# （合计约 0.55 GB，进仓库会让 clone/CI 慢到不可用）
+web/models_gltf/
+web/texture_png/
+web/anims_json/
+web/anim_extra/
+web/audio/
+web/raw_stage/
+web/raw_extra/
+web/text_cn/
+
+# 字体：使用者自行放置
+web/font1.ttf
+web/font2.ttf
+
+# 构建产物
+obj/
+*.o
+core.js
+core.wasm
+site/
+srcs.txt
+err.log
+fail.txt
